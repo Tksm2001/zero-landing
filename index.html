@@ -609,6 +609,55 @@
     .countdown-label{font-size:0.75rem}
     .section-title{font-size:1.5rem !important}
   }
+
+/* ====== MANGA SECTION ====== */
+.manga{padding:80px 1.5rem;background:linear-gradient(180deg,var(--bg-warm) 0%,#ebe3d4 100%);border-top:1px solid var(--border-light);border-bottom:1px solid var(--border-light);overflow:hidden}
+.manga-inner{max-width:1100px;margin:0 auto}
+.manga-header{text-align:center;margin-bottom:2.5rem}
+.manga-label{font-size:0.68rem;font-weight:700;letter-spacing:0.2em;color:var(--gold);text-transform:uppercase;margin-bottom:0.75rem}
+.manga-title{font-size:clamp(1.4rem,3.5vw,2.2rem);font-weight:900;color:var(--navy);line-height:1.35}
+.manga-title em{font-style:normal;color:var(--gold)}
+.manga-panels{display:grid;grid-template-columns:repeat(4,1fr);gap:0.75rem}
+.m-panel{background:#fff;border:3px solid #2a2a2a;border-radius:var(--radius-lg);overflow:hidden;display:flex;flex-direction:column;position:relative;transition:transform 0.3s,box-shadow 0.3s}
+.m-panel:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,0.1)}
+.m-panel-title{background:var(--navy);color:#fff;padding:0.5rem 0.75rem;font-size:0.78rem;font-weight:700;text-align:center;letter-spacing:0.06em}
+.m-row{display:flex;border-bottom:2.5px solid #2a2a2a;min-height:110px;position:relative}
+.m-row:last-child{border-bottom:none}
+.m-cell{flex:1;padding:0.7rem;position:relative;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
+.m-scene-dark{background:linear-gradient(135deg,#e8e2d8,#d5cfc2)}
+.m-scene-blue{background:linear-gradient(135deg,#dce6f0,#c8d6e8)}
+.m-scene-warm{background:linear-gradient(135deg,#f5ece0,#ede4d4)}
+.m-scene-red{background:linear-gradient(135deg,#f5e0e0,#ecd4d4)}
+.m-scene-green{background:linear-gradient(135deg,#e0f5e8,#d0ead8)}
+.m-scene-gold{background:linear-gradient(135deg,#f5ecd0,#ede0b8)}
+.m-scene-bright{background:linear-gradient(135deg,#fff8e0,#fff2c8)}
+.m-scene-pink{background:linear-gradient(135deg,#fce4ec,#f8bbd0)}
+.m-scene-success{background:linear-gradient(135deg,#e8f5e9,#c8e6c9)}
+.m-avatar{width:52px;height:52px;border-radius:50%;border:2.5px solid #2a2a2a;overflow:hidden;flex-shrink:0;box-shadow:0 2px 6px rgba(0,0,0,0.12)}
+.m-avatar img{width:100%;height:100%;object-fit:cover}
+.m-avatar-sm{width:36px;height:36px}
+.m-bubble{position:relative;background:#fff;border:2px solid #2a2a2a;border-radius:16px;padding:0.45rem 0.65rem;font-size:0.72rem;line-height:1.55;font-weight:500;color:var(--text);max-width:95%;box-shadow:1px 2px 4px rgba(0,0,0,0.06)}
+.m-bubble::after{content:'';position:absolute;bottom:-8px;left:18px;border-left:8px solid transparent;border-right:8px solid transparent;border-top:8px solid #fff;filter:drop-shadow(0 1px 0 #2a2a2a)}
+.m-bubble-top::after{bottom:auto;top:-8px;border-top:none;border-bottom:8px solid #fff;filter:drop-shadow(0 -1px 0 #2a2a2a)}
+.m-bubble-right::after{left:auto;right:18px}
+.m-thought{background:#fff;border:2px dashed #999;border-radius:20px;padding:0.4rem 0.6rem;font-size:0.68rem;color:var(--text-sub);font-style:italic}
+.m-emphasis{background:var(--navy);color:#fff;border:2.5px solid #2a2a2a;border-radius:16px;padding:0.5rem 0.7rem;font-size:0.78rem;font-weight:900;text-align:center}
+.m-sfx{font-family:'Inter','Noto Sans JP';font-weight:900;font-size:1.3rem;color:var(--red);text-shadow:2px 2px 0 rgba(0,0,0,0.08);letter-spacing:-0.02em;line-height:1}
+.m-sfx-gold{color:var(--gold)}.m-sfx-green{color:var(--line-green)}.m-sfx-sm{font-size:0.95rem}
+.m-emoji{font-size:1.5rem;line-height:1}
+.m-impact{background:radial-gradient(circle at center,rgba(255,215,0,0.15) 0%,transparent 70%)}
+.m-panel-cta{padding:0.6rem;text-align:center;background:linear-gradient(180deg,#e8f5e9,#c8e6c9);border-top:2.5px solid #2a2a2a}
+.m-panel-cta-text{font-size:0.75rem;font-weight:700;color:var(--line-green)}
+.m-char-wrap{display:flex;align-items:flex-start;gap:0.5rem}
+.m-char-wrap-center{align-items:center}
+.m-char-content{flex:1;display:flex;flex-direction:column;gap:0.3rem}
+.m-badge{display:inline-block;font-size:0.6rem;font-weight:700;padding:0.15rem 0.5rem;border-radius:var(--radius-full);background:var(--red);color:#fff}
+.m-badge-green{background:var(--line-green)}.m-badge-gold{background:var(--gold)}
+.m-line-ui{background:#7bbc61;border-radius:10px;padding:0.35rem 0.5rem;display:flex;align-items:center;gap:0.35rem;font-size:0.65rem;color:#fff;font-weight:700}
+.m-line-icon{width:18px;height:18px;background:#fff;border-radius:5px;display:flex;align-items:center;justify-content:center}
+@media(max-width:900px){.manga-panels{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.manga-panels{grid-template-columns:1fr;max-width:400px;margin:0 auto}.manga{padding:60px 1rem}.m-row{min-height:90px}.m-cell{padding:0.55rem}.m-bubble{font-size:0.7rem}}
+
 </style>
 </head>
 <body>
@@ -690,7 +739,45 @@
   </div>
 </section>
 
-<!-- MID CTA -->
+
+  <!-- ====== MANGA SECTION ====== -->
+  <section class="manga">
+    <div class="manga-inner">
+      <div class="manga-header">
+        <p class="manga-label">Story</p>
+        <h2 class="manga-title"><em>あなた</em>と同じ悩みを持っていた<br>会社員の物語</h2>
+      </div>
+      <div class="manga-panels">
+        <div class="m-panel">
+          <div class="m-panel-title">第1話　このままじゃ不安…</div>
+          <div class="m-row"><div class="m-cell m-scene-warm"><div class="m-char-wrap"><div class="m-avatar"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=120&q=80" alt="" loading="lazy"></div><div class="m-char-content"><div class="m-bubble">給料は上がらないし<br>物価はどんどん上がる…</div><div class="m-sfx" style="font-size:0.85rem;margin-top:0.1rem">はぁ…</div></div></div></div></div>
+          <div class="m-row"><div class="m-cell m-scene-blue"><div class="m-thought" style="margin-bottom:0.3rem">SNSで「月収50万！」とか見るけど…</div><div class="m-bubble">副業やってみたいけど<br><strong>何から始めればいいの？</strong></div></div></div>
+          <div class="m-row"><div class="m-cell m-scene-dark" style="text-align:center"><div style="font-size:1.5rem;line-height:1">📱🔍</div><div class="m-bubble" style="margin:0.3rem auto 0">「副業 おすすめ」で検索…<br>情報が多すぎて<br><strong style="color:var(--red)">何を信じていいかわからない！</strong></div></div></div>
+        </div>
+        <div class="m-panel">
+          <div class="m-panel-title">第2話　失敗の連続…</div>
+          <div class="m-row"><div class="m-cell m-scene-warm"><div class="m-char-wrap"><div class="m-char-content"><div class="m-badge">せどりに挑戦！</div><div class="m-bubble" style="margin-top:0.25rem">仕入れたけど<br>全然売れない…<br><strong style="color:var(--red)">在庫の山</strong>になっちゃった</div></div><div style="font-size:1.5rem;line-height:1">📦📦📦</div></div></div></div>
+          <div class="m-row"><div class="m-cell m-scene-red"><div class="m-badge" style="margin-bottom:0.25rem">FXに挑戦！</div><div class="m-sfx" style="text-align:center;font-size:1.4rem">-50,000円</div><div class="m-bubble m-bubble-top" style="margin-top:0.3rem">いきなり大損…<br><strong style="color:var(--red)">もうやめたい</strong></div></div></div>
+          <div class="m-row"><div class="m-cell m-scene-dark" style="text-align:center"><div class="m-sfx" style="font-size:1.1rem;margin-bottom:0.2rem">ガーン！！</div><div class="m-char-wrap m-char-wrap-center" style="justify-content:center"><div class="m-avatar m-avatar-sm"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=120&q=80" alt="" loading="lazy"></div><div class="m-bubble">高い情報商材を買ったのに<br>中身がスカスカ…<br><strong style="color:var(--red)">もう何も信じられない</strong></div></div></div></div>
+        </div>
+        <div class="m-panel">
+          <div class="m-panel-title">第3話　ZEROとの出会い</div>
+          <div class="m-row"><div class="m-cell m-scene-bright"><div class="m-char-wrap"><div class="m-avatar m-avatar-sm"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=120&q=80" alt="" loading="lazy"></div><div class="m-char-content"><div class="m-bubble">ねぇ、<strong>ZERO</strong>って知ってる？<br>LINE登録するだけで<br><strong style="color:var(--gold)">7大特典が無料</strong>でもらえるの！</div></div></div></div></div>
+          <div class="m-row"><div class="m-cell m-scene-green"><div style="text-align:center;margin-bottom:0.3rem"><div class="m-line-ui" style="display:inline-flex"><div class="m-line-icon"><svg width="11" height="10" viewBox="0 0 36 34" fill="#06c755"><path d="M18 0C8.06 0 0 6.52 0 14.57c0 5.23 3.31 9.82 8.32 12.44-.34 1.28-1.24 4.62-1.42 5.34-.22.89.33.88.69.64.29-.19 4.56-3.1 6.42-4.36a21 21 0 0 0 3.99.38C27.94 28.6 36 22.42 36 14.57 36 6.52 27.94 0 18 0z"/></svg></div>友だち追加</div></div><div class="m-sfx" style="text-align:center;font-size:1rem;color:var(--line-green)">ポチッ！</div><div class="m-bubble m-bubble-right" style="margin-top:0.2rem">とりあえず<br>登録してみよ…</div></div></div>
+          <div class="m-row"><div class="m-cell m-scene-gold m-impact"><div class="m-sfx" style="text-align:center;font-size:1rem;color:var(--gold);margin-bottom:0.2rem">えっ！？</div><div class="m-char-wrap m-char-wrap-center" style="justify-content:center"><div class="m-avatar m-avatar-sm"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=120&q=80" alt="" loading="lazy"></div><div class="m-bubble" style="background:#fffde7;border-color:var(--gold)">こんなに充実した教材が<br><strong style="color:var(--gold)">全部無料！？</strong><br><span style="font-size:0.65rem;color:var(--text-sub)">SNS攻略もFX入門も<br>ぜんぶ揃ってる…！</span></div></div></div></div>
+        </div>
+        <div class="m-panel">
+          <div class="m-panel-title">第4話　人生が変わった！</div>
+          <div class="m-row"><div class="m-cell m-scene-success m-impact"><div class="m-badge" style="background:var(--line-green);margin-bottom:0.2rem">3ヶ月後…</div><div class="m-sfx" style="text-align:center;color:var(--line-green)">+120,000円！</div><div class="m-bubble m-bubble-top" style="margin-top:0.2rem">教材通りにSNS運用したら<br><strong style="color:var(--line-green)">月収12万円</strong>達成！！</div></div></div>
+          <div class="m-row"><div class="m-cell m-scene-bright m-impact"><div class="m-char-wrap m-char-wrap-center"><div style="font-size:1.5rem;line-height:1">🏇</div><div class="m-char-content"><div class="m-sfx" style="font-size:1rem;color:var(--gold)">的中ーっ！！</div><div class="m-bubble">データ分析テンプレートで<br><strong style="color:var(--gold)">回収率120%</strong>に！</div></div></div></div></div>
+          <div class="m-row" style="border-bottom:none"><div class="m-cell m-scene-pink m-impact" style="text-align:center"><div class="m-char-wrap m-char-wrap-center" style="justify-content:center"><div class="m-avatar"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=120&q=80" alt="" loading="lazy"></div><div class="m-emphasis" style="font-size:0.72rem;background:linear-gradient(135deg,var(--navy),var(--navy-light))">ZEROに出会って<br>人生が変わった！</div></div></div></div>
+          <div class="m-panel-cta"><div class="m-panel-cta-text"><i class="fab fa-line" style="margin-right:3px"></i> あなたもまずはLINE登録から！</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MID CTA -->
 <div class="mid-cta">
   <p class="mid-cta-label">＼ 今だけ7大特典を無料プレゼント ／</p>
   <a href="https://line.me/YOUR_LINE_ID" class="giant-cta">
