@@ -123,9 +123,9 @@
   .hero-overlay {
     position: absolute; inset: 0;
     background: linear-gradient(180deg,
-      rgba(255,255,255,0.5) 0%,
-      rgba(255,255,255,0.2) 30%,
-      rgba(245,240,232,0.6) 60%,
+      rgba(255,255,255,0.7) 0%,
+      rgba(255,255,255,0.5) 30%,
+      rgba(245,240,232,0.75) 60%,
       rgba(250,249,247,0.98) 100%
     );
     z-index: 1;
@@ -137,6 +137,7 @@
   /* Countdown */
   .countdown-wrap { margin-bottom: 1.5rem; }
   .countdown-label {
+    text-shadow: 0 1px 6px rgba(255,255,255,0.9);
     font-size: 0.78rem; color: var(--red); font-weight: 700;
     letter-spacing: 0.06em; margin-bottom: 0.5rem;
     animation: blink 1.5s ease infinite;
@@ -168,15 +169,19 @@
     color: var(--gold); margin-bottom: 1rem;
   }
   .hero-title {
-    font-size: clamp(1.8rem, 5.5vw, 3.2rem);
-    font-weight: 900; letter-spacing: -0.02em; line-height: 1.25;
+    text-shadow: 0 2px 12px rgba(255,255,255,0.8), 0 0 30px rgba(255,255,255,0.5);
+    word-break: keep-all;
+    font-size: clamp(2.2rem, 8vw, 3.6rem);
+    font-weight: 900; letter-spacing: -0.02em; line-height: 1.3;
     margin-bottom: 1.25rem; color: var(--navy);
   }
   .hero-title em {
     font-style: normal; color: var(--gold);
   }
   .hero-sub {
-    font-size: clamp(0.88rem, 2vw, 1rem);
+    text-shadow: 0 1px 8px rgba(255,255,255,0.9);
+    word-break: keep-all; overflow-wrap: break-word;
+    font-size: clamp(1rem, 3.2vw, 1.15rem);
     color: var(--text-sub); max-width: 520px;
     margin: 0 auto 2rem; font-weight: 400; line-height: 2;
   }
@@ -208,7 +213,8 @@
   }
   @keyframes shimmer {0%{left:-100%}100%{left:200%}}
   .giant-cta .sub-text { font-size: 0.7rem; font-weight: 500; opacity: 0.9; }
-  .giant-cta .main-text { display: flex; align-items: center; gap: 10px; }
+  .giant-cta .main-text {
+    word-break: keep-all; display: flex; align-items: center; gap: 10px; }
   .line-icon-lg {
     width: 26px; height: 26px; background: white;
     border-radius: 7px; display: flex; align-items: center; justify-content: center;
@@ -595,8 +601,13 @@
   }
   @media(max-width:640px){
     .hero{min-height:92vh}
+    .hero-content{padding:4rem 1.5rem 2rem}
+    .hero-title{font-size:2rem !important;line-height:1.35}
+    .hero-sub{font-size:0.95rem !important;line-height:1.9}
     .cd-box{min-width:46px;padding:.35rem .45rem}
     .cd-num{font-size:1.2rem}
+    .countdown-label{font-size:0.75rem}
+    .section-title{font-size:1.5rem !important}
   }
 </style>
 </head>
@@ -637,11 +648,11 @@
     </div>
     <div class="hero-badge"><i class="fas fa-fire"></i> 先着300名限定 · 期間限定無料公開</div>
     <p class="hero-eyebrow">副業 × 投資 × 公営ギャンブル攻略</p>
-    <h1 class="hero-title">あなたの<em>収入の柱</em>を、<br>ゼロから設計する。</h1>
-    <p class="hero-sub">SNSマーケティング・せどり・FX自動売買・競�	�/競馬攻略。<br>プロが厳選した<strong>7大特典</strong>をLINE登録で無料プレゼント。</p>
+    <h1 class="hero-title">あなたの<em>収入の柱</em>を、<br><span style="display:inline-block">ゼロから設計する。</span></h1>
+    <p class="hero-sub">SNSマーケティング・せどり・FX自動売買<br>競艇/競馬攻略。<br>プロが厳選した<strong>7大特典</strong>を<br>LINE登録で無料プレゼント。</p>
     <div class="hero-arrow"><i class="fas fa-angles-down"></i></div>
     <a href="https://line.me/YOUR_LINE_ID" class="giant-cta">
-      <span class="sub-text">＼ 公式LINE及達追加で ／</span>
+      <span class="sub-text">＼ 公式LINE友達追加で ／</span>
       <span class="main-text">
         <span class="line-icon-lg"><svg width="16" height="15" viewBox="0 0 36 34" fill="#06c755"><path d="M18 0C8.06 0 0 6.52 0 14.57c0 5.23 3.31 9.82 8.32 12.44-.34 1.28-1.24 4.62-1.42 5.34-.22.89.33.88.69.64.29-.19 4.56-3.1 6.42-4.36a21 21 0 0 0 3.99.38C27.94 28.6 36 22.42 36 14.57 36 6.52 27.94 0 18 0z"/></svg></span>
         7大特典を無料で受け取る
