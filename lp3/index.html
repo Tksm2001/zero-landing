@@ -1,444 +1,1571 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ZERO - 副業の初期費用にうんざりしている方へ</title>
-<meta name="description" content="初期費用ゼロ！SNS副業サロン。未経験の主婦でも安心して始められる副業を完全無料でサポート。LINE登録で7大特典プレゼント。">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap" rel="stylesheet">
-<style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{font-size:16px;scroll-behavior:smooth}
-body{font-family:'Zen Maru Gothic','Noto Sans JP',sans-serif;color:#333;background:#e8e8e8;line-height:1.8;overflow-x:hidden}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZERO SNS副業サロン - 初期費用ゼロで副業スタート</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-/* ===== LAYOUT ===== */
-.lp-wrap{max-width:640px;margin:0 auto;background:#fff;overflow:hidden;box-shadow:0 0 40px rgba(0,0,0,0.1)}
+        html {
+            scroll-behavior: smooth;
+        }
 
-/* ===== HERO ===== */
-.hero{position:relative;overflow:hidden}
-.hero-img{width:100%;display:block;min-height:420px;object-fit:cover;object-position:center top}
-.hero-overlay{position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(135deg,rgba(224,247,250,0.35) 0%,rgba(178,235,242,0.2) 50%,transparent 100%);display:flex;flex-direction:column;justify-content:center;align-items:flex-end;padding:2rem}
-.hero-vtext{writing-mode:vertical-rl;text-orientation:mixed;background:rgba(255,255,255,0.88);padding:1rem .7rem;font-size:1.5rem;font-weight:900;color:#7eccc4;border-radius:6px;line-height:1.6;letter-spacing:.08em;box-shadow:0 4px 20px rgba(0,0,0,0.12);margin-bottom:.6rem;text-shadow:1px 1px 0 rgba(255,255,255,0.9)}
-.hero-vtext .accent{color:#5bc0de}
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            overflow-x: hidden;
+        }
 
-/* ===== HERO BANNER ===== */
-.hero-banner{position:relative;background:linear-gradient(135deg,#e0f7fa 0%,#b2ebf2 100%);text-align:center;padding:2.8rem 1.5rem 1.8rem}
-.hero-banner h1{font-size:2.6rem;font-weight:900;color:#f5c800;line-height:1.35;margin-bottom:.5rem;text-shadow:3px 3px 0 rgba(0,0,0,0.12),0 0 20px rgba(245,200,0,0.15);letter-spacing:.04em}
-.hero-banner .sub{font-size:1.4rem;font-weight:900;color:#444;margin-bottom:.5rem}
-.hero-banner .sub .hl{background:linear-gradient(transparent 40%,#ffd700 40%);padding:0 .4rem}
+        /* Colors & Palette */
+        :root {
+            --mint: #7eccc4;
+            --gold: #ffd700;
+            --pink: #ff8fa3;
+            --lavender: #c4b5fd;
+            --orange: #FF9800;
+            --dark: #333;
+            --light-bg: #f8f9fa;
+            --white: #ffffff;
+            --soft-pink: #ffe5ec;
+            --soft-blue: #e0f7ff;
+            --soft-lavender: #f3e5ff;
+            --accent-gray: #666;
+            --dark-gray: #555;
+        }
 
-/* ===== ORANGE CTA BANNER ===== */
-.cta-orange{display:block;max-width:92%;margin:1.5rem auto 2rem;background:linear-gradient(135deg,#ff9800,#f57c00);border-radius:14px;padding:1.3rem 1.5rem;text-align:center;text-decoration:none;color:#fff;box-shadow:0 8px 24px rgba(255,152,0,0.35);border:3px solid #ffe082;animation:pulse 2.4s infinite ease-in-out;position:relative;overflow:hidden;transition:transform .2s}
-.cta-orange:hover{transform:scale(1.03)}
-.cta-orange::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:linear-gradient(45deg,transparent 40%,rgba(255,255,255,0.15) 50%,transparent 60%);animation:shine 3s infinite}
-@keyframes shine{0%{transform:translateX(-100%) rotate(45deg)}100%{transform:translateX(100%) rotate(45deg)}}
-@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.02)}100%{transform:scale(1)}}
-.cta-orange .today{position:absolute;top:8px;left:8px;background:#fff;color:#f57c00;font-size:.72rem;font-weight:900;padding:.35rem .7rem;border-radius:20px;box-shadow:0 2px 8px rgba(0,0,0,0.1)}
-.cta-orange .limit-text{font-size:1.8rem;font-weight:900;margin-bottom:.3rem}
-.cta-orange .limit-text .big{font-size:2.8rem;color:#ffd700;text-shadow:1px 1px 0 rgba(0,0,0,0.15)}
-.cta-orange .limit-sub{font-size:.95rem;font-weight:700;border-top:2px solid rgba(255,255,255,0.5);padding-top:.5rem}
+        /* Typography */
+        h1, h2, h3 {
+            font-family: 'Zen Maru Gothic', sans-serif;
+            color: var(--dark);
+        }
 
-/* ===== PAIN SECTION ===== */
-.pain{background:#666;position:relative;padding:2.5rem 1rem 1.5rem;overflow:hidden}
-.pain-heading{text-align:center;color:#fff;font-size:1.7rem;font-weight:900;margin-bottom:1.5rem;line-height:1.5;text-shadow:2px 2px 6px rgba(0,0,0,0.4);letter-spacing:.05em}
-.pain-bubbles{display:flex;flex-wrap:wrap;justify-content:center;gap:.8rem;margin-bottom:1.5rem}
-.pain-bubble{background:#fff;border-radius:12px;padding:.9rem 1.2rem;font-size:.88rem;font-weight:700;line-height:1.5;text-align:center;box-shadow:0 4px 16px rgba(0,0,0,0.12);position:relative;max-width:48%;flex:1;min-width:140px}
-.pain-bubble::after{content:'';position:absolute;bottom:-10px;left:50%;transform:translateX(-50%);width:0;height:0;border-left:10px solid transparent;border-right:10px solid transparent;border-top:10px solid #fff}
-.pain-bubble .hl{background:linear-gradient(transparent 40%,#ffd700 40%);font-weight:900;color:#333}
-.pain-img{width:55%;max-width:250px;display:block;margin:0 auto;border-radius:8px}
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 0.5rem;
+        }
 
-/* ===== STRUGGLE ===== */
-.struggle{background:#555;padding:.5rem 0 2rem}
-.struggle-manga{position:relative;background:#fff;max-width:85%;margin:1.5rem auto;padding:1.2rem 2rem;text-align:center;border:3px solid #333;clip-path:polygon(5% 0, 95% 0, 100% 5%, 100% 95%, 95% 100%, 5% 100%, 0 95%, 0 5%)}
-.struggle-manga p{font-size:1.5rem;font-weight:900;color:#333;line-height:1.6}
-.struggle-cards{display:flex;flex-direction:column;gap:1.2rem;padding:0 1rem}
-.s-card{position:relative;border-radius:6px;overflow:hidden;transform:rotate(-2deg);box-shadow:6px 6px 24px rgba(0,0,0,0.35);border:4px solid #fff}
-.s-card:nth-child(even){transform:rotate(1.5deg)}
-.s-card img{width:100%;height:220px;object-fit:cover;display:block}
-.s-card-label{position:absolute;bottom:0;left:0;right:0;background:rgba(50,50,50,0.9);color:#fff;padding:.8rem 1rem;display:flex;align-items:center;gap:.5rem;font-size:.95rem;font-weight:700;backdrop-filter:blur(4px)}
-.s-card-label .check{color:#ffd700;font-size:1.3rem}
-.s-card-label .hl{color:#ffd700;font-size:1.05rem}
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 1rem;
+        }
 
-/* ===== TRANSITION ===== */
-.transition-sec{position:relative;background:#555;padding:0}
-.transition-arrow{background:#444;clip-path:polygon(0 0, 100% 0, 50% 100%);height:50px}
-.transition-body{background:linear-gradient(180deg,#444,#555);text-align:center;padding:2.5rem 1.5rem 3rem}
-.transition-body h2{color:#fff;font-size:1.7rem;font-weight:900;line-height:1.7;text-shadow:2px 2px 6px rgba(0,0,0,0.3)}
-.transition-body h2 .yellow{color:#ffd700;text-shadow:2px 2px 6px rgba(0,0,0,0.3)}
+        h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 0.8rem;
+        }
 
-/* ===== SOLUTION ===== */
-.solution{background:linear-gradient(180deg,#e0f7fa,#e8f5e9);padding:3rem 1rem;text-align:center}
-.solution h2{font-size:2rem;font-weight:900;color:#c8a415;margin-bottom:.6rem;line-height:1.4;letter-spacing:.03em}
-.solution h2 .underline{border-bottom:4px solid #ffd700;padding-bottom:3px}
-.solution .sol-sub{font-size:.9rem;color:#777;margin-bottom:2rem}
-.sol-cards{display:flex;flex-direction:column;gap:1.5rem}
-.sol-card{position:relative;border-radius:14px;overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,0.1);border:5px solid rgba(224,247,250,0.8)}
-.sol-card img{width:100%;height:260px;object-fit:cover;display:block}
-.sol-card-text{position:absolute;top:0;right:0;bottom:0;display:flex;gap:.4rem;padding:.8rem;align-items:stretch}
-.sol-vstrip{writing-mode:vertical-rl;text-orientation:mixed;background:rgba(79,195,247,0.9);color:#fff;padding:.7rem .5rem;font-size:1.05rem;font-weight:900;border-radius:6px;line-height:1.4;letter-spacing:.08em;display:flex;align-items:center;backdrop-filter:blur(4px);box-shadow:0 3px 12px rgba(0,0,0,0.15);text-shadow:1px 1px 3px rgba(0,0,0,0.2)}
-.sol-vstrip .yellow{color:#ffd700;text-shadow:1px 1px 3px rgba(0,0,0,0.25)}
+        p {
+            line-height: 1.6;
+            color: var(--accent-gray);
+            margin-bottom: 1rem;
+        }
 
-/* ===== GREEN LINE CTA ===== */
-.cta-line{background:linear-gradient(180deg,#e0f7fa,#b2dfdb);text-align:center;padding:2.5rem 1.5rem}
-.cta-line-note{font-size:.85rem;color:#666;margin-bottom:.6rem}
-.cta-line-note .bold{font-size:1.15rem;font-weight:900;color:#333}
-.cta-line-badges{display:flex;justify-content:center;gap:.7rem;margin-bottom:1.5rem}
-.cta-line-badge{width:95px;height:95px;border-radius:50%;background:rgba(179,229,252,0.5);display:flex;align-items:center;justify-content:center;text-align:center;font-size:.78rem;font-weight:700;color:#1a6e8e;line-height:1.3;border:2px solid rgba(79,195,247,0.3)}
-.line-btn{display:block;max-width:92%;margin:0 auto;background:#06c755;border-radius:14px;padding:1.1rem 1.5rem;text-align:center;text-decoration:none;color:#fff;font-size:1.1rem;font-weight:900;box-shadow:0 8px 24px rgba(6,199,85,0.3);position:relative;overflow:hidden;animation:pulse 2.4s infinite;transition:transform .2s}
-.line-btn:hover{transform:scale(1.03)}
-.line-btn::before{content:'';position:absolute;top:0;left:0;right:0;background:rgba(255,255,255,0.15);height:50%;border-radius:14px 14px 0 0}
-.line-btn .line-icon{display:inline-block;vertical-align:middle;margin-right:.5rem}
-.line-btn .line-icon svg{width:28px;height:28px;fill:#fff;vertical-align:middle}
-.line-btn .sub-note{display:block;font-size:.72rem;font-weight:500;margin-top:.2rem;color:rgba(255,255,255,0.8)}
+        /* Animations */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
 
-/* ===== VOICE ===== */
-.voice{background:linear-gradient(180deg,#e0f7fa,#e8f5e9);padding:3rem 1rem}
-.voice-title{text-align:center;font-size:1.8rem;font-weight:900;color:#1a6e8e;margin-bottom:2rem;letter-spacing:.04em}
-.voice-title .underline{border-bottom:5px solid #ffd700;padding-bottom:5px}
-.v-card{background:#fff;border-radius:18px;overflow:hidden;margin-bottom:1.8rem;box-shadow:0 6px 28px rgba(0,0,0,0.08);border:3px solid #b2ebf2}
-.v-card-photo{position:relative}
-.v-card-photo img{width:100%;height:280px;object-fit:cover;object-position:center top;display:block}
-.v-card-photo .voice-num{position:absolute;top:14px;left:14px;font-family:'Georgia',serif;font-size:2.5rem;color:#fff;font-style:italic;text-shadow:2px 2px 10px rgba(0,0,0,0.4);line-height:1}
-.v-card-photo .voice-num span{display:block;font-size:3rem}
-.v-card-photo .name-badge{position:absolute;bottom:16px;right:16px;background:linear-gradient(135deg,#ff9800,#f57c00);color:#fff;padding:.5rem 1rem;border-radius:50%;width:84px;height:84px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:700;font-size:.78rem;line-height:1.3;box-shadow:0 4px 14px rgba(0,0,0,0.25)}
-.v-card-ba{display:flex;gap:.5rem;padding:1rem;align-items:center}
-.ba-box{flex:1;text-align:center;padding:.7rem;border-radius:10px;border:2px solid #ddd}
-.ba-box.before{background:#f5f5f5}
-.ba-box.before .label{background:#888;color:#fff;padding:.18rem .6rem;border-radius:4px;font-size:.65rem;font-weight:700;display:inline-block;margin-bottom:.3rem}
-.ba-box.after{background:#fff8e1;border-color:#ff9800}
-.ba-box.after .label{background:#ff9800;color:#fff;padding:.18rem .6rem;border-radius:4px;font-size:.65rem;font-weight:700;display:inline-block;margin-bottom:.3rem}
-.ba-box .value{font-size:1.5rem;font-weight:900;color:#555}
-.ba-box.after .value{color:#ff9800;font-size:1.6rem}
-.ba-arrow{font-size:2rem;color:#ff9800}
-.v-card-body{padding:1rem 1.3rem 1.5rem;font-size:.88rem;color:#555;line-height:2;background:repeating-linear-gradient(transparent,transparent 1.95em,#eee 1.95em,#eee 2em)}
-.v-card-body .hl{color:#ff9800;font-weight:700}
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.05); opacity: 0.8; }
+        }
 
-/* ===== CLOSING / EMOTIONAL ===== */
-.emotional{background:linear-gradient(180deg,#e8f5e9,#e0f7fa,#ede7f6);padding:3rem 1.5rem;text-align:center}
-.emotional-woman{width:100%;max-width:400px;display:block;margin:0 auto 2rem;border-radius:16px;box-shadow:0 8px 32px rgba(0,0,0,0.1)}
-.emotional .starburst{display:inline-flex;background:#fff176;color:#333;font-size:.82rem;font-weight:900;padding:.5rem 1rem;border-radius:50%;width:95px;height:95px;line-height:1.3;align-items:center;justify-content:center;margin:0 auto 1.2rem;box-shadow:0 4px 14px rgba(0,0,0,0.08)}
-.emotional h2{font-size:1.8rem;font-weight:900;color:#d4a017;line-height:1.5;margin-bottom:.8rem;text-shadow:1px 1px 0 rgba(255,255,255,0.5)}
-.emotional h2 .sub-line{display:block;font-size:1.05rem;color:#555;font-weight:700}
-.emotional .tagline{font-size:.88rem;color:#555;line-height:2;margin-bottom:.8rem}
-.emotional .tagline .accent{color:#1a9ec4;font-weight:900}
-.emotional .tagline .bold{font-weight:900;color:#333}
+        @keyframes shine {
+            0% { background-position: -1000px 0; }
+            100% { background-position: 1000px 0; }
+        }
 
-/* ===== 7 BENEFITS ===== */
-.benefits7{background:linear-gradient(180deg,#e0f7fa,#b2ebf2);padding:3rem 1rem;text-align:center}
-.benefits7 h2{font-size:1.6rem;font-weight:900;color:#1a6e8e;margin-bottom:1.8rem;line-height:1.5;letter-spacing:.03em}
-.benefits7 h2 .orange{color:#ff9800;font-size:1.8rem}
-.b7-list{display:flex;flex-direction:column;gap:.7rem;max-width:440px;margin:0 auto}
-.b7-item{display:flex;align-items:center;gap:.8rem;background:#fff;border-radius:12px;padding:.8rem 1rem;text-align:left;box-shadow:0 3px 12px rgba(0,0,0,0.06);border-left:4px solid #ff9800}
-.b7-num{background:linear-gradient(135deg,#ff9800,#f57c00);color:#fff;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:.82rem;flex-shrink:0}
-.b7-text{font-size:.84rem;font-weight:600;color:#444;line-height:1.4}
+        @keyframes sparkle {
+            0%, 100% { opacity: 0; }
+            50% { opacity: 1; }
+        }
 
-/* ===== Q&A ===== */
-.qa{background:#fff;padding:3rem 1rem}
-.qa h2{text-align:center;font-size:1.4rem;font-weight:900;color:#333;margin-bottom:2rem}
-.qa-item{margin-bottom:1.2rem}
-.qa-q{background:#4fc3f7;color:#fff;padding:.8rem 1rem;border-radius:10px 10px 0 0;font-size:.92rem;font-weight:700;display:flex;align-items:center;gap:.5rem}
-.qa-q .q-mark{font-size:1.1rem;font-weight:900;flex-shrink:0}
-.qa-a{background:#fafafa;padding:1rem;border-radius:0 0 10px 10px;font-size:.88rem;color:#555;line-height:1.8;display:flex;gap:.5rem;border:1px solid #e0e0e0;border-top:0}
-.qa-a .a-mark{color:#ff9800;font-weight:900;font-size:1.1rem;flex-shrink:0}
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-/* ===== FOOTER ===== */
-.disclaimer{font-size:.7rem;color:#999;text-align:center;padding:.5rem 1rem 0;line-height:1.6}
-.footer{background:#4fc3f7;padding:1.5rem;text-align:center;color:#fff;font-size:.72rem}
-.footer a{color:#fff;text-decoration:none;margin:0 .5rem}
-.footer .copy{margin-top:.5rem;color:rgba(255,255,255,0.7)}
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            font-family: 'Zen Maru Gothic', sans-serif;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
 
-/* ===== RESPONSIVE ===== */
-@media(max-width:640px){
-  .hero-img{min-height:350px}
-  .hero-vtext{font-size:1.2rem;padding:.8rem .5rem}
-  .hero-banner h1{font-size:1.9rem}
-  .pain-heading{font-size:1.4rem}
-  .pain-bubble{font-size:.82rem;padding:.7rem .9rem}
-  .s-card img{height:200px}
-  .sol-card img{height:220px}
-  .sol-vstrip{font-size:.9rem}
-  .v-card-photo img{height:240px}
-  .emotional-woman{max-width:320px}
-  .solution h2{font-size:1.6rem}
-  .voice-title{font-size:1.5rem}
-  .emotional h2{font-size:1.5rem}
-  .benefits7 h2{font-size:1.35rem}
-  .transition-body h2{font-size:1.4rem}
-}
-</style>
+        .btn-primary {
+            background: linear-gradient(135deg, var(--orange), #ff6b35);
+            color: white;
+            animation: pulse 2s infinite;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 152, 0, 0.4);
+        }
+
+        .btn-line {
+            background: linear-gradient(135deg, #00c300, #00a800);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            width: 100%;
+            margin: 1rem 0;
+        }
+
+        .btn-line:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 195, 0, 0.4);
+        }
+
+        /* Sections */
+        section {
+            padding: 3rem 1.5rem;
+            max-width: 640px;
+            margin: 0 auto;
+            animation: slideInUp 0.6s ease;
+        }
+
+        /* Section 1: Hero with Image */
+        .section-hero {
+            padding: 0;
+            position: relative;
+            height: 60vh;
+            max-width: 100%;
+            margin: 0;
+            background: linear-gradient(135deg, rgba(126, 204, 196, 0.3), rgba(196, 181, 253, 0.3));
+            overflow: hidden;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(126, 204, 196, 0.4), rgba(255, 143, 163, 0.4));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+        }
+
+        .hero-text {
+            color: white;
+            text-align: center;
+            font-size: 1.3rem;
+            font-weight: 700;
+            line-height: 1.8;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Section 2: Hero Banner */
+        .section-banner {
+            background: linear-gradient(135deg, var(--mint), var(--lavender));
+            color: white;
+            text-align: center;
+            padding: 3rem 1.5rem;
+            border-radius: 20px 20px 0 0;
+            margin-top: -2rem;
+            position: relative;
+            z-index: 3;
+        }
+
+        .section-banner h1 {
+            color: white;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .section-banner .subtitle {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.95);
+            font-weight: 500;
+        }
+
+        /* Section 3: Orange CTA */
+        .section-cta-orange {
+            background: linear-gradient(135deg, var(--orange), #ff9d2b);
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1.5rem;
+            border-radius: 20px;
+            margin: 2rem auto;
+            max-width: 640px;
+            box-shadow: 0 8px 25px rgba(255, 152, 0, 0.3);
+        }
+
+        .section-cta-orange h3 {
+            color: white;
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
+
+        .section-cta-orange p {
+            color: rgba(255, 255, 255, 0.95);
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        .cta-note {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.85);
+            margin-top: 1rem;
+        }
+
+        /* Section 4: ZEROとは */
+        .section-zero {
+            background: white;
+            padding: 3rem 1.5rem;
+        }
+
+        .cards-3col {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(126, 204, 196, 0.2);
+            border-color: var(--mint);
+        }
+
+        .card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .card h3 {
+            color: var(--orange);
+            margin-bottom: 1rem;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .card-note {
+            font-size: 0.8rem;
+            color: var(--orange);
+            font-weight: 600;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 2px solid var(--soft-lavender);
+        }
+
+        /* Section 5: Pain/Worries */
+        .section-pain {
+            background: linear-gradient(135deg, rgba(85, 85, 85, 0.95), rgba(100, 100, 100, 0.95));
+            color: white;
+            padding: 3rem 1.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section-pain::before {
+            content: '✨ ✨ ✨ ✨ ✨';
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 1.5rem;
+            opacity: 0.3;
+        }
+
+        .section-pain h2 {
+            color: white;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .speech-bubbles {
+            display: grid;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .speech-bubble {
+            background: white;
+            color: var(--dark);
+            padding: 1.5rem 1.5rem 1rem;
+            border-radius: 15px;
+            position: relative;
+            font-weight: 600;
+            line-height: 1.6;
+            border: 3px solid var(--dark);
+            box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.2);
+            transform: rotate(-1deg);
+        }
+
+        .speech-bubble:nth-child(even) {
+            transform: rotate(1deg);
+            margin-left: 1rem;
+        }
+
+        .speech-bubble::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 20px;
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-top: 15px solid white;
+            border-right: 0px solid transparent;
+        }
+
+        .section-pain .pain-image {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            margin: 2rem auto;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Section 6: Struggle */
+        .section-struggle {
+            background: white;
+            padding: 3rem 1.5rem;
+        }
+
+        .section-struggle h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .manga-panels {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .manga-panel {
+            border: 4px solid var(--dark);
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.15);
+            transform: rotate(-0.5deg);
+        }
+
+        .manga-panel:nth-child(even) {
+            transform: rotate(0.5deg);
+        }
+
+        .manga-panel img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .manga-panel-text {
+            background: white;
+            padding: 1.2rem;
+            font-weight: 700;
+            color: var(--dark);
+            text-align: center;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        /* Section 7: 失敗あるある */
+        .section-failure {
+            background: linear-gradient(135deg, var(--soft-lavender), var(--soft-pink));
+            padding: 3rem 1.5rem;
+        }
+
+        .section-failure h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--dark);
+        }
+
+        .failure-panels {
+            display: grid;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .failure-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+
+        .failure-item p {
+            font-weight: 600;
+            color: var(--dark);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .failure-conclusion {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            font-weight: 600;
+            color: var(--dark);
+            line-height: 1.8;
+            margin-top: 1.5rem;
+            border: 2px solid var(--mint);
+        }
+
+        /* Section 8: Transition */
+        .section-transition {
+            background: linear-gradient(135deg, var(--dark-gray), var(--dark));
+            color: white;
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .arrow-down {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .section-transition h3 {
+            color: white;
+            font-size: 1.4rem;
+            margin-top: 1rem;
+        }
+
+        /* Section 9: Solution */
+        .section-solution {
+            background: white;
+            padding: 3rem 1.5rem;
+        }
+
+        .section-solution h2 {
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-solution .subtitle {
+            text-align: center;
+            font-size: 0.95rem;
+            color: var(--accent-gray);
+            margin-bottom: 2rem;
+        }
+
+        .solution-cards {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .solution-card {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .solution-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 35px rgba(126, 204, 196, 0.2);
+        }
+
+        .solution-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .solution-card-content {
+            background: linear-gradient(135deg, var(--soft-lavender), var(--soft-pink));
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .solution-card-title {
+            font-weight: 700;
+            color: var(--orange);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .solution-card-subtitle {
+            color: var(--dark);
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        /* Section 10: カリキュラム */
+        .section-curriculum {
+            background: linear-gradient(135deg, var(--soft-blue), white);
+            padding: 3rem 1.5rem;
+        }
+
+        .section-curriculum h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .curriculum-steps {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        .curriculum-step {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            border-left: 5px solid var(--mint);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            position: relative;
+        }
+
+        .curriculum-step::before {
+            content: attr(data-step);
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            background: var(--mint);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 10px rgba(126, 204, 196, 0.3);
+        }
+
+        .curriculum-step h3 {
+            color: var(--mint);
+            margin-bottom: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Section 11: LINE CTA Middle */
+        .section-line-cta {
+            background: linear-gradient(135deg, var(--mint), var(--lavender));
+            color: white;
+            padding: 3rem 1.5rem;
+            text-align: center;
+            border-radius: 20px;
+            margin: 2rem auto;
+            max-width: 640px;
+        }
+
+        .section-line-cta h3 {
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .badges {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid white;
+            border-radius: 50px;
+            padding: 0.8rem 0.5rem;
+            font-weight: 700;
+            font-size: 0.8rem;
+            backdrop-filter: blur(10px);
+        }
+
+        /* Section 12: 実績 */
+        .section-results {
+            background: white;
+            padding: 3rem 1.5rem;
+        }
+
+        .section-results h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .results-cards {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .results-card {
+            background: linear-gradient(135deg, var(--soft-lavender), white);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            border: 2px solid var(--lavender);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .results-number {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--orange);
+            margin-bottom: 0.5rem;
+        }
+
+        .results-label {
+            color: var(--dark);
+            font-weight: 600;
+        }
+
+        .results-note {
+            background: var(--soft-pink);
+            border-radius: 10px;
+            padding: 1rem;
+            margin-top: 1.5rem;
+            font-size: 0.8rem;
+            color: var(--dark);
+            font-weight: 600;
+        }
+
+        /* Section 13: Voice */
+        .section-voice {
+            background: white;
+            padding: 3rem 1.5rem;
+        }
+
+        .section-voice h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .voice-cards {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        .voice-card {
+            background: linear-gradient(135deg, var(--soft-pink), var(--soft-lavender));
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .voice-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .voice-card-content {
+            padding: 2rem;
+            background: white;
+        }
+
+        .voice-title {
+            font-weight: 700;
+            color: var(--orange);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .voice-before-after {
+            background: var(--soft-lavender);
+            border-radius: 10px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--dark);
+        }
+
+        .voice-text {
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: var(--accent-gray);
+            margin-bottom: 1rem;
+        }
+
+        .voice-disclaimer {
+            font-size: 0.75rem;
+            color: var(--orange);
+            font-weight: 600;
+            padding-top: 1rem;
+            border-top: 1px solid var(--lavender);
+            margin-top: 1rem;
+        }
+
+        /* Section 14: FAQ */
+        .section-faq {
+            background: linear-gradient(135deg, var(--soft-blue), white);
+            padding: 3rem 1.5rem;
+        }
+
+        .section-faq h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .faq-cards {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        .faq-card {
+            background: white;
+            border-radius: 15px;
+            padding: 1.5rem;
+            border-left: 5px solid var(--mint);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .faq-question {
+            font-weight: 700;
+            color: var(--mint);
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .faq-answer {
+            color: var(--accent-gray);
+            font-size: 0.9rem;
+            line-height: 1.7;
+        }
+
+        /* Section 15: Emotional Closing */
+        .section-emotional {
+            background: linear-gradient(135deg, var(--soft-pink), var(--soft-lavender));
+            padding: 3rem 1.5rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .emotional-image {
+            width: 100%;
+            max-width: 280px;
+            height: auto;
+            border-radius: 20px;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .starburst {
+            position: relative;
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: var(--gold);
+            color: var(--dark);
+            font-weight: 700;
+            border-radius: 50px;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+            animation: pulse 2s infinite;
+        }
+
+        .section-emotional h2 {
+            color: var(--dark);
+            margin-bottom: 1.5rem;
+        }
+
+        .section-emotional p {
+            color: var(--dark);
+            font-weight: 500;
+        }
+
+        /* Section 16: 運営者メッセージ */
+        .section-founder {
+            background: white;
+            padding: 3rem 1.5rem;
+        }
+
+        .section-founder h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .founder-container {
+            background: linear-gradient(135deg, var(--soft-lavender), white);
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        .founder-image {
+            width: 100%;
+            max-width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 2rem;
+            display: block;
+            border: 4px solid var(--mint);
+            box-shadow: 0 8px 20px rgba(126, 204, 196, 0.2);
+        }
+
+        .founder-message {
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: var(--accent-gray);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .founder-note {
+            background: var(--soft-pink);
+            border-radius: 10px;
+            padding: 1rem;
+            font-size: 0.8rem;
+            color: var(--dark);
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+
+        /* Section 17: 7大特典 */
+        .section-benefits {
+            background: white;
+            padding: 3rem 1.5rem;
+        }
+
+        .section-benefits h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .benefits-list {
+            background: linear-gradient(135deg, var(--soft-lavender), var(--soft-pink));
+            border-radius: 20px;
+            padding: 2rem;
+            display: grid;
+            gap: 1.2rem;
+        }
+
+        .benefit-item {
+            background: white;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border-left: 5px solid var(--gold);
+            font-weight: 600;
+            color: var(--dark);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .benefit-number {
+            background: var(--gold);
+            color: var(--dark);
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        /* Section 19: Q&A */
+        .section-qa {
+            background: linear-gradient(135deg, var(--soft-blue), white);
+            padding: 3rem 1.5rem;
+        }
+
+        .section-qa h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .qa-items {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .qa-item {
+            background: white;
+            border-radius: 15px;
+            padding: 1.5rem;
+            border-top: 5px solid var(--orange);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .qa-question {
+            font-weight: 700;
+            color: var(--orange);
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--soft-lavender);
+            font-size: 0.95rem;
+        }
+
+        .qa-answer {
+            color: var(--accent-gray);
+            font-size: 0.9rem;
+            line-height: 1.7;
+        }
+
+        /* Section 20: Final CTA */
+        .section-final-cta {
+            background: linear-gradient(135deg, var(--orange), #ff9d2b);
+            color: white;
+            padding: 3rem 1.5rem;
+            text-align: center;
+            border-radius: 20px;
+            margin: 2rem auto;
+            max-width: 640px;
+            box-shadow: 0 8px 25px rgba(255, 152, 0, 0.3);
+        }
+
+        .section-final-cta h3 {
+            color: white;
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+        }
+
+        .section-final-cta .cta-note {
+            margin-top: 1.5rem;
+            font-size: 0.8rem;
+        }
+
+        /* Section 21: Footer */
+        footer {
+            background: var(--dark-gray);
+            color: white;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            max-width: 640px;
+            margin: 0 auto;
+            font-size: 0.85rem;
+            line-height: 1.8;
+        }
+
+        footer a {
+            color: var(--mint);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: var(--gold);
+        }
+
+        .footer-links {
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links a {
+            margin: 0 0.5rem;
+            display: inline-block;
+        }
+
+        .footer-copyright {
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .footer-disclaimer {
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-top: 1rem;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.4rem;
+            }
+
+            h3 {
+                font-size: 1.1rem;
+            }
+
+            section {
+                padding: 2rem 1rem;
+            }
+
+            .cards-3col, .manga-panels, .solution-cards, .voice-cards {
+                gap: 1.2rem;
+            }
+
+            .btn {
+                padding: 0.9rem 1.5rem;
+                font-size: 0.95rem;
+            }
+
+            .speech-bubble::after {
+                border-left: 10px solid transparent;
+                border-top: 10px solid white;
+            }
+
+            .manga-panel img {
+                height: 200px;
+            }
+
+            .solution-card img {
+                height: 250px;
+            }
+
+            .voice-card img {
+                height: 250px;
+            }
+        }
+
+        /* Sparkle effect */
+        .sparkle {
+            position: relative;
+        }
+
+        .sparkle::before {
+            content: '✨';
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            font-size: 1.5rem;
+            animation: sparkle 1s ease-in-out infinite;
+        }
+    </style>
 </head>
 <body>
-<div class="lp-wrap">
-
-  <!-- ====== HERO ====== -->
-  <section class="hero">
-    <img class="hero-img" src="img/lp3_hero.jpg" alt="自宅で笑顔で副業する女性">
-    <div class="hero-overlay">
-      <div class="hero-vtext">副業の初期費用に</div>
-      <div class="hero-vtext">うんざりしている方へ</div>
-    </div>
-  </section>
-
-  <!-- ====== HERO BANNER ====== -->
-  <section class="hero-banner">
-    <h1>初期費用ゼロ！<br>SNS副業サロン</h1>
-    <p class="sub">みんな <span class="hl">未経験</span> からスタート！</p>
-  </section>
-
-  <!-- ====== ORANGE CTA 1 ====== -->
-  <a href="https://lin.ee/XXXXX" class="cta-orange">
-    <span class="today">今だけ!</span>
-    <p class="limit-text">先着<span class="big">30</span>名様限定</p>
-    <p class="limit-sub">LINE追加で無料相談実施中！</p>
-    <span style="display:block;font-size:.6rem;margin-top:.3rem;opacity:.8">※ 定員に達し次第終了</span>
-  </a>
-
-  <!-- ====== PAIN ====== -->
-  <section class="pain">
-    <h2 class="pain-heading">こんなお悩みありませんか？</h2>
-    <div class="pain-bubbles">
-      <div class="pain-bubble">副業興味はあるけど<br><span class="hl">初期費用がかかるのが不安</span></div>
-      <div class="pain-bubble">SNSを仕事にしたい！<br><span class="hl">でもどうやって？</span></div>
-      <div class="pain-bubble">将来が見えない<br><span class="hl">何をしたらいいの？</span></div>
-      <div class="pain-bubble">自分に合った副業が<br><span class="hl">見つからない</span></div>
-      <div class="pain-bubble" style="max-width:65%">副業やりたいけど、<br><span class="hl">時間がない</span></div>
-    </div>
-    <img class="pain-img" src="img/lp3_pain.jpg" alt="悩む女性">
-  </section>
-
-  <!-- ====== STRUGGLE ====== -->
-  <section class="struggle">
-    <div class="struggle-manga">
-      <p>でも、<br>副業って言われても…</p>
-    </div>
-    <div class="struggle-cards">
-      <div class="s-card">
-        <img src="img/lp3_tired.jpg" alt="疲れた女性">
-        <div class="s-card-label"><span class="check">&#9745;</span>仕事優先の毎日で<span class="hl">時間がない</span></div>
-      </div>
-      <div class="s-card">
-        <img src="img/lp3_anxious.jpg" alt="不安な女性">
-        <div class="s-card-label"><span class="check">&#9745;</span>何を始めたらいいか<span class="hl">わからない</span></div>
-      </div>
-      <div class="s-card">
-        <img src="img/lp3_confused.jpg" alt="迷う女性">
-        <div class="s-card-label"><span class="check">&#9745;</span>高額スクールは<span class="hl">怖い</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ====== TRANSITION ====== -->
-  <section class="transition-sec">
-    <div class="transition-arrow"></div>
-    <div class="transition-body">
-      <h2>でも、<br><span class="yellow">それで後悔しない</span>と<br>諦めますか？</h2>
-    </div>
-  </section>
-
-  <!-- ====== SOLUTION ====== -->
-  <section class="solution">
-    <h2><span class="underline">0円で理想の副業</span>を<br>始められます！</h2>
-    <p class="sol-sub">初心者から経験者まで、<br>ライフスタイルに合った収益化手法を選べます。</p>
-    <div class="sol-cards">
-      <div class="sol-card">
-        <img src="img/lp3_cafe.jpg" alt="カフェでスマホ作業">
-        <div class="sol-card-text">
-          <div class="sol-vstrip">海外・カフェ・在宅OK</div>
-          <div class="sol-vstrip">0円で<span class="yellow">自由に働ける</span></div>
+    <!-- Section 1: Hero Image -->
+    <section class="section-hero">
+        <img src="img/anime_hero.png" alt="ZERO SNS副業サロン" class="hero-image">
+        <div class="hero-overlay">
+            <div class="hero-text">
+                副業の初期費用に<br>うんざりしている方へ
+            </div>
         </div>
-      </div>
-      <div class="sol-card">
-        <img src="img/lp3_laptop.jpg" alt="ノートPC作業">
-        <div class="sol-card-text">
-          <div class="sol-vstrip">年齢や学歴関係なく</div>
-          <div class="sol-vstrip">0円で<span class="yellow">収入UPを狙える</span></div>
+    </section>
+
+    <!-- Section 2: Hero Banner -->
+    <section class="section-banner">
+        <h1>初期費用ゼロ！<br>SNS副業サロン</h1>
+        <p class="subtitle">みんな 未経験 からスタート！</p>
+    </section>
+
+    <!-- Section 3: Orange CTA ① -->
+    <section class="section-cta-orange">
+        <h3>期間限定</h3>
+        <p>毎月10名様限定の募集です</p>
+        <a href="https://lin.ee/XXXXX" class="btn btn-line">
+            <span>📱</span> LINE登録で無料相談受付中
+        </a>
+        <p class="cta-note">※ 受付期間：20XX年X月X日まで</p>
+    </section>
+
+    <!-- Section 4: ZEROとは？ -->
+    <section class="section-zero">
+        <h2>ZEROが選ばれる3つの理由</h2>
+
+        <div class="cards-3col">
+            <div class="card">
+                <div class="card-icon">💰</div>
+                <h3>完全無料で始められる</h3>
+                <p>LINE登録・初回相談・特典ダウンロードはすべて無料です。金銭的リスクなく、まずは試してみることができます。</p>
+                <div class="card-note">※ 有料コースへの勧誘は一切ありません</div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">👥</div>
+                <h3>専任サポーターが伴走</h3>
+                <p>一人で悩まず、専任のサポーターがあなたのペースに合わせてアドバイス。「何から始めればいいかわからない」を解消します。</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">📱</div>
+                <h3>SNS特化の実践型カリキュラム</h3>
+                <p>座学だけではなく、実際にSNSを運用しながら学ぶ実践型。インスタグラムを中心に、コンテンツ作成から収益化まで学べます。</p>
+            </div>
         </div>
-      </div>
-      <div class="sol-card">
-        <img src="img/lp3_family.jpg" alt="幸せな家族">
-        <div class="sol-card-text">
-          <div class="sol-vstrip">結婚や子育てしながら</div>
-          <div class="sol-vstrip"><span class="yellow">将来の不安がなくなる</span></div>
+    </section>
+
+    <!-- Section 5: Pain (お悩み) -->
+    <section class="section-pain">
+        <h2>こんなお悩みありませんか？</h2>
+
+        <div class="speech-bubbles">
+            <div class="speech-bubble">副業興味はあるけど<br>初期費用がかかるのが不安</div>
+            <div class="speech-bubble">SNSを仕事にしたい！<br>でもどうやって？</div>
+            <div class="speech-bubble">将来が見えない<br>何をしたらいいの？</div>
+            <div class="speech-bubble">自分に合った副業が<br>見つからない</div>
+            <div class="speech-bubble">副業やりたいけど、<br>時間がない</div>
         </div>
-      </div>
-      <div class="sol-card">
-        <img src="img/lp3_resort.jpg" alt="リゾートで作業">
-        <div class="sol-card-text">
-          <div class="sol-vstrip">副業で時間を生み</div>
-          <div class="sol-vstrip">大切な人との<span class="yellow">時間を増やす</span></div>
+
+        <img src="img/anime_pain.png" alt="お悩みの女性" class="pain-image">
+    </section>
+
+    <!-- Section 6: Struggle -->
+    <section class="section-struggle">
+        <h2>でも、副業って言われても…</h2>
+
+        <div class="manga-panels">
+            <div class="manga-panel">
+                <img src="img/anime_tired.png" alt="疲れている様子">
+                <div class="manga-panel-text">仕事優先の毎日で<br>時間がない</div>
+            </div>
+            <div class="manga-panel">
+                <img src="img/anime_anxious.png" alt="不安そうな女性">
+                <div class="manga-panel-text">何を始めたらいいか<br>わからない</div>
+            </div>
+            <div class="manga-panel">
+                <img src="img/anime_confused.png" alt="悩んでいる女性">
+                <div class="manga-panel-text">高額スクールは<br>怖い</div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ====== GREEN LINE CTA ====== -->
-  <section class="cta-line">
-    <p class="cta-line-note">あなたも<span class="bold">0円</span>で副業を始めよう</p>
-    <div class="cta-line-badges">
-      <div class="cta-line-badge">未経験<br>OK</div>
-      <div class="cta-line-badge">安心<br>サポート</div>
-      <div class="cta-line-badge">登録料<br>0円</div>
-    </div>
-    <a href="https://lin.ee/XXXXX" class="line-btn">
-      <span class="line-icon"><svg viewBox="0 0 24 24"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.271.173-.508.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg></span>
-      公式LINEを追加して<br>無料レクチャーを受ける
-      <span class="sub-note">申し込み簡単！30秒で完了</span>
-    </a>
-  </section>
-
-  <!-- ====== VOICE ====== -->
-  <section class="voice">
-    <h2 class="voice-title"><span class="underline">受講生の声</span></h2>
-
-    <!-- Voice 01 -->
-    <div class="v-card">
-      <div class="v-card-photo">
-        <img src="img/lp3_kana.jpg" alt="かなさん">
-        <div class="voice-num">Voice<span>01</span></div>
-        <div class="name-badge">かなさん<br>26歳</div>
-      </div>
-      <div class="v-card-ba">
-        <div class="ba-box before">
-          <span class="label">Before</span>
-          <p class="value">未経験</p>
+        <div style="margin-top:1.5rem;text-align:center;">
+            <img src="img/anime_manga_bonus.png" alt="あなたも同じ悩みを抱えていませんか？" style="width:100%;max-width:400px;border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,0.15);">
+            <p style="margin-top:0.8rem;font-size:0.9rem;color:#666;">あなたも同じ悩みを抱えていませんか？</p>
         </div>
-        <span class="ba-arrow">&#10132;</span>
-        <div class="ba-box after">
-          <span class="label">After</span>
-          <p class="value">月5万円</p>
+    </section>
+
+    <!-- Section 7: 失敗あるある -->
+    <section class="section-failure">
+        <h2>こんな失敗、していませんか？</h2>
+
+        <div class="failure-panels">
+            <div class="failure-item">
+                <img src="img/anime_fail1.png" alt="高額スクールの失敗" style="width:100%;border-radius:12px;margin-bottom:0.8rem;">
+                <p>高額スクールに入ったのに、結局何も変わらなかった</p>
+            </div>
+            <div class="failure-item">
+                <img src="img/anime_fail2.png" alt="情報商材の失敗" style="width:100%;border-radius:12px;margin-bottom:0.8rem;">
+                <p>情報商材を買ったけど、実践できずに終わった</p>
+            </div>
+            <div class="failure-item">
+                <img src="img/anime_fail3.png" alt="独学の失敗" style="width:100%;border-radius:12px;margin-bottom:0.8rem;">
+                <p>独学でSNSを始めたけど、フォロワーが全く増えなかった</p>
+            </div>
         </div>
-      </div>
-      <div class="v-card-body">
-        保育士として毎日ギリギリの生活。副業に興味はあるものの、何から始めて良いか分からず、やりたいことも見つからない状況でした。<br><br><span class="hl">ZEROの無料副業診断で、SNS運用が自分に合っていると判定。「無料ならやってみよう」と思えたのが、挑戦のきっかけでした。</span><br><br>1日の副業時間はたった30分。お金をかけずに始められたから、安心して続けられ、半年経ちますが、今では月5万円を達成！
-      </div>
-    </div>
 
-    <!-- Voice 02 -->
-    <div class="v-card">
-      <div class="v-card-photo">
-        <img src="img/lp3_riko.jpg" alt="りこさん">
-        <div class="voice-num">Voice<span>02</span></div>
-        <div class="name-badge">りこさん<br>28歳</div>
-      </div>
-      <div class="v-card-ba">
-        <div class="ba-box before">
-          <span class="label">Before</span>
-          <p class="value">未経験</p>
+        <div class="failure-conclusion">
+            その失敗、「正しいやり方」を知らなかっただけかもしれません。<br>
+            <strong>ZEROなら、お金をかけずに、正しい方法で再スタートできます。</strong>
         </div>
-        <span class="ba-arrow">&#10132;</span>
-        <div class="ba-box after">
-          <span class="label">After</span>
-          <p class="value">月8万円</p>
+    </section>
+
+    <!-- Section 8: Transition -->
+    <section class="section-transition">
+        <div class="arrow-down">⬇️</div>
+        <h3>でも、それで後悔しない<br>と諦めますか？</h3>
+    </section>
+
+    <!-- Section 9: Solution -->
+    <section class="section-solution">
+        <h2>0円で理想の副業<br>を始められます！</h2>
+        <p class="subtitle">LINE登録・相談・特典がすべて無料。まずはお試しで、あなたに合った副業スタイルを見つけましょう。</p>
+
+        <div class="solution-cards">
+            <div class="solution-card">
+                <img src="img/anime_cafe.png" alt="カフェでの作業">
+                <div class="solution-card-content">
+                    <div class="solution-card-title">海外・カフェ・在宅OK</div>
+                    <div class="solution-card-subtitle">0円で自由に働ける</div>
+                </div>
+            </div>
+
+            <div class="solution-card">
+                <img src="img/anime_laptop.png" alt="パソコンで作業">
+                <div class="solution-card-content">
+                    <div class="solution-card-title">年齢や学歴関係なく</div>
+                    <div class="solution-card-subtitle">0円で収入UPを狙える</div>
+                </div>
+            </div>
+
+            <div class="solution-card">
+                <img src="img/anime_family.png" alt="家族との時間">
+                <div class="solution-card-content">
+                    <div class="solution-card-title">結婚や子育てしながら</div>
+                    <div class="solution-card-subtitle">将来の不安がなくなる</div>
+                </div>
+            </div>
+
+            <div class="solution-card">
+                <img src="img/anime_resort.png" alt="リゾートでの作業">
+                <div class="solution-card-content">
+                    <div class="solution-card-title">副業で時間を生み</div>
+                    <div class="solution-card-subtitle">大切な人との時間を増やす</div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="v-card-body">
-        私でもできる副業を探していたときに出会ったのがZEROでした。<span class="hl">まさか完全無料で、在宅でもしっかり成果が出せることに驚きました。</span><br><br>今ではSNS運用で月8万円の収入を得られるまでに。在宅でできるから、スキマ時間でも続けやすく、何より「自分でもできた」という小さな成功体験が大きな自信になりました。
-      </div>
-    </div>
+    </section>
 
-    <!-- Voice 03 -->
-    <div class="v-card">
-      <div class="v-card-photo">
-        <img src="img/lp3_maki.jpg" alt="まきさん">
-        <div class="voice-num">Voice<span>03</span></div>
-        <div class="name-badge">まきさん<br>41歳</div>
-      </div>
-      <div class="v-card-ba">
-        <div class="ba-box before">
-          <span class="label">Before</span>
-          <p class="value">スクール：0円</p>
+    <!-- Section 10: カリキュラム紹介 -->
+    <section class="section-curriculum">
+        <h2>ZEROで学べること</h2>
+
+        <div class="curriculum-steps">
+            <div class="curriculum-step" data-step="STEP 1">
+                <h3>副業タイプチェック</h3>
+                <p>まずはあなたに合った副業スタイルを無料で見つけましょう。</p>
+            </div>
+
+            <div class="curriculum-step" data-step="STEP 2">
+                <h3>SNSアカウント設計</h3>
+                <p>プロフィール作成・コンセプト設計をサポーターと一緒に行います。</p>
+            </div>
+
+            <div class="curriculum-step" data-step="STEP 3">
+                <h3>コンテンツ作成・運用</h3>
+                <p>投稿の作り方・ハッシュタグ戦略・リール動画のコツを学びます。</p>
+            </div>
+
+            <div class="curriculum-step" data-step="STEP 4">
+                <h3>収益化・マネタイズ</h3>
+                <p>アフィリエイト・PR案件・自社商品販売など、収益化の方法を学びます。</p>
+            </div>
         </div>
-        <span class="ba-arrow">&#10132;</span>
-        <div class="ba-box after">
-          <span class="label">After</span>
-          <p class="value">月12万円</p>
+    </section>
+
+    <!-- Section 11: LINE CTA (中間) -->
+    <section class="section-line-cta">
+        <h3>あなたも0円で副業を始めよう</h3>
+
+        <div class="badges">
+            <div class="badge">未経験OK</div>
+            <div class="badge">安心サポート</div>
+            <div class="badge">登録料0円</div>
         </div>
-      </div>
-      <div class="v-card-body">
-        以前は高額なSNSスクールに入ったのに結果が出ず、正直「自分には向いていない」と諦めかけていました。<br><br>そんな時に出会ったのが、完全無料で始められるZEROでした。<span class="hl">最初は「無料なんて怪しい」と疑っていましたが、話を聞くと金銭的リスクは本当にゼロ。</span><br><br>サポート内容も丁寧で、実際のSNS運用ノウハウまで学べることに驚きました。今では月12万円を安定して稼いでいます。
-      </div>
-    </div>
-    <p class="disclaimer">※ 掲載内容は個人の感想であり、成果を保証するものではありません。効果には個人差があります。</p>
-  </section>
 
-  <!-- ====== EMOTIONAL / CLOSING ====== -->
-  <section class="emotional">
-    <img class="emotional-woman" src="img/lp3_emotional.jpg" alt="笑顔の女性">
-    <div class="starburst">無料で<br>はじめる</div>
-    <h2>ZEROなら<br>お金の心配はいりません！</h2>
-    <p class="tagline">あなたも<span class="bold">0円で副業を始めよう</span></p>
-    <p class="tagline"><span class="accent">変化は、行動から生まれます。</span></p>
-    <p class="tagline">「私にできるだろうか…」<br>そう思うのは当たり前。</p>
-    <p class="tagline">でも、ZEROなら金銭的リスク0円で<br>挑戦できます。</p>
-    <p class="tagline">あなたの中には、<br>まだ眠っている可能性があります。<br>ZEROは、その可能性を引き出し、<br><span class="accent">0円で挑戦できる安心のサポート体制</span>で支えます。</p>
-    <p class="tagline">心の奥底にある<span class="bold">「変わりたい」</span>という想いに、<br>今こそ耳を傾けてください。<br>失敗を恐れる必要はありません。</p>
-    <p class="tagline">私たちZEROは、あなたの不安に寄り添い、<br>共に乗り越えていきます。未来の自分のために、<br>勇気ある一歩をお待ちしています。</p>
-  </section>
+        <a href="https://lin.ee/XXXXX" class="btn btn-line">
+            <span>📱</span> LINE登録で無料相談受付中
+        </a>
+    </section>
 
-  <!-- ====== 7 BENEFITS ====== -->
-  <section class="benefits7">
-    <h2>LINE登録で<span class="orange">7大特典</span><br>すべて無料プレゼント</h2>
-    <div class="b7-list">
-      <div class="b7-item"><span class="b7-num">1</span><span class="b7-text">SNS収益化 完全ロードマップ</span></div>
-      <div class="b7-item"><span class="b7-num">2</span><span class="b7-text">せどり 仕入れ先リスト＆利益計算シート</span></div>
-      <div class="b7-item"><span class="b7-num">3</span><span class="b7-text">インスタ集客 テンプレート＆実践ガイド</span></div>
-      <div class="b7-item"><span class="b7-num">4</span><span class="b7-text">在宅ワーク効率化 時間管理シート</span></div>
-      <div class="b7-item"><span class="b7-num">5</span><span class="b7-text">副業適性診断シート</span></div>
-      <div class="b7-item"><span class="b7-num">6</span><span class="b7-text">税金・確定申告 かんたんガイド</span></div>
-      <div class="b7-item"><span class="b7-num">7</span><span class="b7-text">プロ講師による無料個別相談（1回）</span></div>
-    </div>
-  </section>
+    <!-- Section 12: 実績数字 -->
+    <section class="section-results">
+        <h2>ZEROの実績</h2>
 
-  <!-- ====== ORANGE CTA 2 ====== -->
-  <a href="https://lin.ee/XXXXX" class="cta-orange" style="margin-top:0;border-radius:0;max-width:100%">
-    <span class="today">今だけ!</span>
-    <p class="limit-text">先着<span class="big">30</span>名様限定</p>
-    <p class="limit-sub">LINE追加で無料相談実施中！</p>
-    <span style="display:block;font-size:.6rem;margin-top:.3rem;opacity:.8">※ 定員に達し次第終了</span>
-  </a>
+        <div class="results-cards">
+            <div class="results-card">
+                <div class="results-number">XXXX件</div>
+                <div class="results-label">累計相談件数以上</div>
+            </div>
+            <div class="results-card">
+                <div class="results-number">XX%</div>
+                <div class="results-label">利用者満足度</div>
+            </div>
+            <div class="results-card">
+                <div class="results-number">XX%</div>
+                <div class="results-label">継続率（3ヶ月以上）</div>
+            </div>
+        </div>
 
-  <!-- ====== Q&A ====== -->
-  <section class="qa">
-    <h2>Q&A</h2>
-    <div class="qa-item">
-      <div class="qa-q"><span class="q-mark">Q</span>未経験でも本当に大丈夫ですか？</div>
-      <div class="qa-a"><span class="a-mark">A</span>はい。ZEROの利用者の多くが未経験からスタートしています。初心者向けの教材とサポート体制が充実しているので安心して始められます。</div>
-    </div>
-    <div class="qa-item">
-      <div class="qa-q"><span class="q-mark">Q</span>どんな働き方ができますか？</div>
-      <div class="qa-a"><span class="a-mark">A</span>ZEROでは、本業・副業・在宅ワークなど自由に選べます。あなたに合った形を0円で相談・スタートできるのが特徴です。</div>
-    </div>
-    <div class="qa-item">
-      <div class="qa-q"><span class="q-mark">Q</span>スマホだけでもできますか？</div>
-      <div class="qa-a"><span class="a-mark">A</span>はい。SNS運用はスマホ1台でOKです。特別な機材も不要。ネット環境さえあれば今すぐ始められます。</div>
-    </div>
-    <div class="qa-item">
-      <div class="qa-q"><span class="q-mark">Q</span>本当に無料で始められますか？</div>
-      <div class="qa-a"><span class="a-mark">A</span>はい。ZEROの副業は初期費用・登録料・月額費すべて0円。金銭的リスクは一切なく、完全無料で始められます。</div>
-    </div>
-    <div class="qa-item">
-      <div class="qa-q"><span class="q-mark">Q</span>実際に結果を出している人は多いですか？</div>
-      <div class="qa-a"><span class="a-mark">A</span>はい。ZEROでは多くの未経験の方が成果を出しています。無料サポートと明確な学習ロードマップにより、着実にスキルが身につく環境です。</div>
-    </div>
-  </section>
+        <div class="results-note">
+            ※ 実際の数字が必要です。架空の数字は景品表示法違反となります。
+        </div>
+    </section>
 
-  <!-- ====== FINAL CTA ====== -->
-  <section class="cta-line" style="padding-bottom:3rem">
-    <p class="cta-line-note" style="font-size:1rem;font-weight:700;margin-bottom:1rem">未来の自分のために、<br>勇気ある一歩をお待ちしています。</p>
-    <a href="https://lin.ee/XXXXX" class="line-btn" style="font-size:1.15rem">
-      <span class="line-icon"><svg viewBox="0 0 24 24"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.271.173-.508.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg></span>
-      LINEで無料登録する
-      <span class="sub-note">※ 先着30名限定・いつでもブロックOK</span>
-    </a>
-  </section>
+    <!-- Section 13: Voice (受講生の声) -->
+    <section class="section-voice">
+        <h2>受講生の声</h2>
 
-  <!-- ====== FOOTER ====== -->
-  <footer class="footer">
-    <a href="#">特定商取引法に基づく表記</a> | <a href="#">プライバシーポリシー</a>
-    <p class="copy">&copy; 2026 ZERO運営事務局 All Rights Reserved.</p>
-  </footer>
+        <div class="voice-cards">
+            <div class="voice-card">
+                <img src="img/anime_kana.png" alt="かなさん">
+                <div class="voice-card-content">
+                    <div class="voice-title">かなさん（26歳）</div>
+                    <div class="voice-before-after">未経験 → 月5万円</div>
+                    <div class="voice-text">
+                        「初期費用が0円だったので、とにかく試しやすかったです。未経験でしたが、サポーターさんが親身になってくれて、3ヶ月で月5万円の収入が実現しました。今は自分のペースで継続しています。」
+                    </div>
+                    <div class="voice-disclaimer">
+                        ※ イメージ写真です<br>
+                        ※ 個人の実績であり、成果は取り組み内容・期間により異なります
+                    </div>
+                </div>
+            </div>
 
-</div>
+            <div class="voice-card">
+                <img src="img/anime_riko.png" alt="りこさん">
+                <div class="voice-card-content">
+                    <div class="voice-title">りこさん（28歳）</div>
+                    <div class="voice-before-after">未経験 → 月8万円</div>
+                    <div class="voice-text">
+                        「高いスクールは避けたかったので、ZEROは理想的でした。実践型だから、学びながらすぐに実行できるのが良いですね。今では月8万円の副業収入が生活の安定につながっています。」
+                    </div>
+                    <div class="voice-disclaimer">
+                        ※ イメージ写真です<br>
+                        ※ 個人の実績であり、成果は取り組み内容・期間により異なります
+                    </div>
+                </div>
+            </div>
+
+            <div class="voice-card">
+                <img src="img/anime_maki.png" alt="まきさん">
+                <div class="voice-card-content">
+                    <div class="voice-title">まきさん（41歳）</div>
+                    <div class="voice-before-after">スクール費用0円 → 月12万円</div>
+                    <div class="voice-text">
+                        「年齢が心配でしたが、『年齢は関係ない』と教えてくれました。50代の人もいると聞いて挑戦する勇気が出ました。今では月12万円を稼ぎながら、子育てとも両立できています。」
+                    </div>
+                    <div class="voice-disclaimer">
+                        ※ イメージ写真です<br>
+                        ※ 個人の実績であり、成果は取り組み内容・期間により異なります
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 14: 不安解消 Q&A -->
+    <section class="section-faq">
+        <h2>それでも不安なあなたへ</h2>
+
+        <div class="faq-cards">
+            <div class="faq-card">
+                <div class="faq-question">❓ 本当に無料？ 後から請求が来たりしない？</div>
+                <div class="faq-answer">
+                    LINE登録・初回相談・7大特典は完全無料です。後から請求や勧誘は一切ありません。合わないと感じたら、LINEをブロックするだけでOKです。
+                </div>
+            </div>
+
+            <div class="faq-card">
+                <div class="faq-question">❓ 本当に稼げるの？</div>
+                <div class="faq-answer">
+                    収入は取り組み内容や期間により異なります。ZEROでは「稼げること」を保証するのではなく、「正しい方法を学べる環境」を提供しています。
+                </div>
+            </div>
+
+            <div class="faq-card">
+                <div class="faq-question">❓ 個人情報が漏れたりしない？</div>
+                <div class="faq-answer">
+                    お預かりする情報はプライバシーポリシーに基づき適切に管理しています。詳細はプライバシーポリシーをご確認ください。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 15: Emotional Closing -->
+    <section class="section-emotional">
+        <img src="img/anime_emotional.png" alt="希望に満ちた女性" class="emotional-image">
+
+        <div class="starburst">無料ではじめる</div>
+
+        <h2>ZEROなら<br>お金の心配はいりません！</h2>
+
+        <p>
+            副業に興味はあるけど、高額なスクールや情報商材に手を出すのは不安。<br>
+            そんなあなたの気持ちはよくわかります。
+        </p>
+
+        <p>
+            でも待ってください。<br>
+            お金をかけずに、正しい方法で副業を始められるチャンスがあるとしたら？
+        </p>
+
+        <p style="font-weight: 600; color: var(--dark);">
+            あなたもリスク0円で副業を始めよう。
+        </p>
+    </section>
+
+    <!-- Section 16: 運営者メッセージ -->
+    <section class="section-founder">
+        <h2>ZERO代表より</h2>
+
+        <div class="founder-container">
+            <img src="img/anime_founder.png" alt="ZERO代表" class="founder-image">
+
+            <p class="founder-message">
+                私自身、かつて副業の初期費用に苦しんだ経験があります。高いお金を払っても結果が出ない。その経験から、「お金の心配なく挑戦できる場を作りたい」という想いでZEROを立ち上げました。まずはお気軽にLINEでご相談ください。
+            </p>
+
+            <div class="founder-note">
+                ※ 運営者の実名 or ニックネーム・写真があるとさらに効果的です
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 17: 7大特典 -->
+    <section class="section-benefits">
+        <h2>LINE登録で<br>7大特典 すべて無料プレゼント</h2>
+
+        <div class="benefits-list">
+            <div class="benefit-item">
+                <div class="benefit-number">1</div>
+                <div>副業タイプチェックシート<br><span style="font-size: 0.85rem; font-weight: 400;">あなたに最適な副業を診断</span></div>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-number">2</div>
+                <div>SNS運用の基礎マニュアル<br><span style="font-size: 0.85rem; font-weight: 400;">初心者向けの実践ガイド</span></div>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-number">3</div>
+                <div>プロフィール設計テンプレート<br><span style="font-size: 0.85rem; font-weight: 400;">魅力的なプロフ作成の秘訣</span></div>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-number">4</div>
+                <div>コンテンツ制作ガイド<br><span style="font-size: 0.85rem; font-weight: 400;">バズる投稿の作り方</span></div>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-number">5</div>
+                <div>ハッシュタグ戦略シート<br><span style="font-size: 0.85rem; font-weight: 400;">フォロワーを増やすコツ</span></div>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-number">6</div>
+                <div>初回1対1相談（50分）<br><span style="font-size: 0.85rem; font-weight: 400;">専任サポーターとのマンツー面談</span></div>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-number">7</div>
+                <div>月1回グループコンサル参加<br><span style="font-size: 0.85rem; font-weight: 400;">他の挑戦者と学べる環境</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 18: Orange CTA ② -->
+    <section class="section-cta-orange">
+        <h3>期間限定</h3>
+        <p>毎月10名様限定の募集です</p>
+        <a href="https://lin.ee/XXXXX" class="btn btn-line">
+            <span>📱</span> LINE登録で無料相談受付中
+        </a>
+        <p class="cta-note">※ 受付期間：20XX年X月X日まで</p>
+    </section>
+
+    <!-- Section 19: Q&A -->
+    <section class="section-qa">
+        <h2>よくある質問</h2>
+
+        <div class="qa-items">
+            <div class="qa-item">
+                <div class="qa-question">Q. 初期費用は本当に0円ですか？</div>
+                <div class="qa-answer">
+                    A. はい。LINE登録から初回相談、特典ダウンロードまで、すべて完全無料です。後から費用が発生することはありません。
+                </div>
+            </div>
+
+            <div class="qa-item">
+                <div class="qa-question">Q. 未経験でもできますか？</div>
+                <div class="qa-answer">
+                    A. もちろんです。むしろZEROは初心者向け。参加者の95%が未経験からのスタートです。
+                </div>
+            </div>
+
+            <div class="qa-item">
+                <div class="qa-question">Q. 時間がないのですが大丈夫？</div>
+                <div class="qa-answer">
+                    A. SNS副業は、1日30分程度のスキマ時間でもOK。あなたのペースに合わせて進められます。
+                </div>
+            </div>
+
+            <div class="qa-item">
+                <div class="qa-question">Q. 年齢制限はありますか？</div>
+                <div class="qa-answer">
+                    A. いいえ。20代から50代まで、様々な年齢の方が参加しています。年齢は関係ありません。
+                </div>
+            </div>
+
+            <div class="qa-item">
+                <div class="qa-question">Q. スマートフォンだけでもできますか？</div>
+                <div class="qa-answer">
+                    A. はい。SNS副業はスマートフォンがあれば完結します。パソコンがなくても大丈夫です。
+                </div>
+            </div>
+
+            <div class="qa-item">
+                <div class="qa-question">Q. 途中でやめても大丈夫ですか？</div>
+                <div class="qa-answer">
+                    A. はい。無料の範囲内であれば、いつでもLINEをブロックするだけで退会できます。罰則や費用は一切かかりません。
+                </div>
+            </div>
+
+            <div class="qa-item">
+                <div class="qa-question">Q. 子育て中でもできますか？</div>
+                <div class="qa-answer">
+                    A. はい。多くの利用者が子育てや介護をしながら取り組んでいます。スキマ時間でできるのがSNS副業の大きなメリットです。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 20: Final CTA -->
+    <section class="section-final-cta">
+        <h3>未来の自分のために、<br>勇気ある一歩をお待ちしています。</h3>
+
+        <a href="https://lin.ee/XXXXX" class="btn btn-line">
+            <span>📱</span> LINE登録で無料相談受付中
+        </a>
+
+        <p class="cta-note">※ 受付期間：20XX年X月X日まで・いつでもブロックOK</p>
+    </section>
+
+    <!-- Section 21: Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="#">特定商取引法に基づく表記</a>
+            <span>|</span>
+            <a href="#">プライバシーポリシー</a>
+        </div>
+
+        <div class="footer-copyright">
+            © 2026 ZERO運営事務局 All Rights Reserved.
+        </div>
+
+        <div class="footer-disclaimer">
+            本サービスは教育的コンテンツであり、特定の利益を保証するものではありません。成果は個人差があり、取り組み内容や期間により異なります。詳細はプライバシーポリシーをご確認ください。
+        </div>
+    </footer>
+
 </body>
 </html>
