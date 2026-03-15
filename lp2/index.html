@@ -3,443 +3,681 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ZERO - 副業・投資の収入の柱をゼロから設計する</title>
-<meta name="description" content="SNSマーケティング・せどり・FX自動売買・競艇/競馬攻略。プロが厳選した7大特典を無料でお届け。LINE登録で今すぐ受け取る。">
+<title>SNS副業マスタープログラム - 無料では手に入らない収益化の核心</title>
+<meta name="description" content="無料コンテンツでは得られない、収益化の核心だけを凝縮した完全プログラム。専属コーチによる個別指導で、あなたのSNS副業を本気で成功に導きます。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{font-size:16px;scroll-behavior:smooth}
-body{font-family:'Noto Sans JP',sans-serif;color:#333;background:#fff;line-height:1.8;overflow-x:hidden}
+body{font-family:'Zen Maru Gothic','Noto Sans JP',sans-serif;color:#e8e8e8;background:#0a0a14;line-height:1.8;overflow-x:hidden}
 
 /* ===== LAYOUT ===== */
-.lp-wrap{max-width:640px;margin:0 auto;background:#fff;box-shadow:0 0 40px rgba(0,0,0,0.06)}
-.section-img{width:100%;display:block}
+.lp-wrap{max-width:640px;margin:0 auto;background:#0f0f1a}
 
-/* ===== CTA BUTTON ===== */
-.cta-banner{display:block;margin:0 auto;max-width:100%;border-radius:14px;cursor:pointer;
-  animation:pulse 2.4s infinite ease-in-out;transition:transform .1s ease,box-shadow .3s ease}
-.cta-banner:active{transform:scale(1.08);box-shadow:0 18px 40px rgba(34,139,34,0.4)}
-@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.03)}100%{transform:scale(1)}}
+/* ===== COLORS ===== */
+:root{
+  --gold:#d4a017;
+  --gold-light:#f0d060;
+  --red:#e74c3c;
+  --red-soft:#ff6b6b;
+  --navy:#0f0f1a;
+  --navy-light:#1a1a2e;
+  --navy-mid:#16213e;
+  --blue:#2980b9;
+  --blue-light:#5dade2;
+  --white:#ffffff;
+  --gray:#aaaaaa;
+  --text:#e8e8e8;
+}
 
 /* ===== HERO ===== */
-.hero{position:relative;background:linear-gradient(135deg,#0a1628 0%,#162d50 100%);text-align:center;padding:3rem 1.5rem 2rem;color:#fff}
-.hero-badge{display:inline-block;background:linear-gradient(135deg,#c8a84e,#e8c84e);color:#0a1628;font-size:.75rem;font-weight:700;padding:.35rem 1.2rem;border-radius:20px;letter-spacing:.08em;margin-bottom:1rem}
-.hero-main-img{width:90%;max-width:420px;margin:0 auto 1.5rem;display:block;border-radius:12px;box-shadow:0 12px 40px rgba(0,0,0,0.3)}
-.hero h1{font-size:1.65rem;font-weight:900;line-height:1.5;margin-bottom:.5rem}
-.hero h1 .accent{color:#e8c84e}
-.hero .sub{font-size:.95rem;color:rgba(255,255,255,0.8);margin-bottom:1.5rem}
-.hero .services{display:flex;justify-content:center;gap:.5rem;flex-wrap:wrap;margin-bottom:1.5rem}
-.hero .services span{background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.25);padding:.3rem .7rem;border-radius:6px;font-size:.72rem;font-weight:500}
+.hero{position:relative;background:linear-gradient(160deg,#0a0a14 0%,#1a1a2e 40%,#16213e 100%);text-align:center;padding:2.5rem 1.5rem 2rem;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-50%;right:-50%;width:200%;height:200%;background:radial-gradient(circle at 70% 30%,rgba(212,160,23,0.08) 0%,transparent 50%);pointer-events:none}
+.hero-badge{display:inline-block;background:linear-gradient(135deg,var(--red),#c0392b);color:#fff;font-size:.72rem;font-weight:700;padding:.35rem 1.2rem;border-radius:20px;letter-spacing:.08em;margin-bottom:1rem;box-shadow:0 4px 15px rgba(231,76,60,0.3)}
+.hero-img{width:85%;max-width:380px;margin:0 auto 1.5rem;display:block;border-radius:16px;box-shadow:0 12px 40px rgba(0,0,0,0.5);border:2px solid rgba(212,160,23,0.3)}
+.hero h1{font-size:1.5rem;font-weight:900;line-height:1.6;margin-bottom:.8rem;color:#fff}
+.hero h1 .gold{color:var(--gold-light)}
+.hero h1 .strike{text-decoration:line-through;color:var(--red-soft);opacity:0.8}
+.hero .sub{font-size:.88rem;color:rgba(255,255,255,0.7);margin-bottom:1.5rem;line-height:1.8}
+.hero .sub strong{color:var(--gold-light)}
 
-/* ===== CTA SECTION ===== */
-.cta-section{background:linear-gradient(180deg,#0a1628,#1a3a5c);text-align:center;padding:2rem 1.5rem}
-.cta-section .limit{color:#e8c84e;font-size:.85rem;font-weight:700;margin-bottom:.8rem}
+/* ===== CTA ===== */
+.cta-section{background:linear-gradient(180deg,var(--navy-light),var(--navy-mid));text-align:center;padding:2rem 1.5rem}
+.cta-section .limit{color:var(--gold-light);font-size:.88rem;font-weight:700;margin-bottom:.8rem}
 .cta-section .limit .num{font-size:1.8rem;font-weight:900}
-.cta-btn{display:inline-flex;align-items:center;gap:.6rem;background:linear-gradient(135deg,#06c755,#04a847);color:#fff;font-size:1.1rem;font-weight:700;padding:1rem 2.5rem;border-radius:60px;text-decoration:none;box-shadow:0 6px 24px rgba(6,199,85,0.4);animation:pulse 2.4s infinite ease-in-out;transition:all .2s}
+.cta-btn{display:inline-flex;align-items:center;gap:.6rem;background:linear-gradient(135deg,#06c755,#04a847);color:#fff;font-size:1.05rem;font-weight:700;padding:1rem 2.2rem;border-radius:60px;text-decoration:none;box-shadow:0 6px 24px rgba(6,199,85,0.4);animation:pulse 2.4s infinite ease-in-out;transition:all .2s}
 .cta-btn:active{transform:scale(1.05);box-shadow:0 10px 30px rgba(6,199,85,0.5)}
-.cta-btn svg{width:28px;height:28px;fill:#fff}
-.cta-note{color:rgba(255,255,255,0.6);font-size:.7rem;margin-top:.6rem}
+.cta-btn svg{width:26px;height:26px;fill:#fff}
+@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.03)}100%{transform:scale(1)}}
+.cta-note{color:rgba(255,255,255,0.5);font-size:.7rem;margin-top:.6rem}
 
-/* ===== PAIN SECTION ===== */
-.pain{background:#555;padding:3rem 1.5rem;text-align:center}
-.pain-title{color:#fff;font-size:1.5rem;font-weight:900;margin-bottom:2rem}
-.pain-title .yellow{color:#ffe066}
-.bubble-list{display:flex;flex-direction:column;gap:1rem;max-width:440px;margin:0 auto 2rem}
-.bubble{background:#fff;border-radius:16px;padding:1rem 1.3rem;font-size:.92rem;font-weight:700;position:relative;box-shadow:0 3px 12px rgba(0,0,0,0.1)}
-.bubble .hl{color:#c0392b;border-bottom:2px solid #ffe066;padding-bottom:1px}
-.bubble::after{content:'';position:absolute;bottom:-10px;left:50%;transform:translateX(-50%);width:0;height:0;border-left:10px solid transparent;border-right:10px solid transparent;border-top:10px solid #fff}
-.pain-img{width:80%;max-width:300px;border-radius:12px;margin:0 auto;display:block;box-shadow:0 8px 30px rgba(0,0,0,0.15)}
+/* ===== PROBLEM ===== */
+.problem{background:linear-gradient(180deg,#1a0a0a,#1a1a2e);padding:3rem 1.5rem;text-align:center}
+.section-title{font-size:1.35rem;font-weight:900;line-height:1.7;margin-bottom:.5rem;color:#fff}
+.section-title .gold{color:var(--gold-light)}
+.section-title .red{color:var(--red-soft)}
+.section-sub{font-size:.82rem;color:var(--gray);margin-bottom:2rem}
+.wall-cards{display:flex;flex-direction:column;gap:1.2rem;max-width:480px;margin:0 auto}
+.wall-card{background:rgba(231,76,60,0.08);border:1px solid rgba(231,76,60,0.25);border-radius:16px;padding:1.3rem;text-align:left;position:relative;overflow:hidden}
+.wall-card::before{content:attr(data-num);position:absolute;top:8px;right:12px;font-size:3rem;font-weight:900;color:rgba(231,76,60,0.1);line-height:1}
+.wall-card h3{font-size:1rem;font-weight:700;color:var(--red-soft);margin-bottom:.5rem;display:flex;align-items:center;gap:.5rem}
+.wall-card h3 .icon{font-size:1.3rem}
+.wall-card p{font-size:.85rem;color:rgba(255,255,255,0.75);line-height:1.8}
+.problem-img{width:80%;max-width:340px;border-radius:16px;margin:2rem auto 0;display:block;box-shadow:0 8px 30px rgba(0,0,0,0.3);border:2px solid rgba(231,76,60,0.2)}
 
-/* ===== STRUGGLE ===== */
-.struggle{background:#444;padding:2.5rem 1.5rem;text-align:center}
-.struggle-label{color:#fff;font-size:1.1rem;font-weight:700;margin-bottom:1.5rem}
-.struggle-cards{display:flex;flex-direction:column;gap:1.2rem;max-width:440px;margin:0 auto}
-.s-card{display:flex;align-items:center;gap:1rem;background:rgba(255,255,255,0.08);border-radius:12px;overflow:hidden}
-.s-card-img{width:110px;height:110px;object-fit:cover;flex-shrink:0}
-.s-card-text{padding:.8rem .8rem .8rem 0;color:#fff}
-.s-card-text .check{color:#ffe066;font-size:1.1rem;margin-right:.3rem}
-.s-card-text p{font-size:.82rem;font-weight:500;line-height:1.6}
-.s-card-text .hl{color:#ffe066;font-weight:700}
+/* ===== DATA ===== */
+.data{background:var(--navy-light);padding:3rem 1.5rem;text-align:center}
+.stat-cards{display:flex;flex-direction:column;gap:1rem;max-width:440px;margin:0 auto 1.5rem}
+.stat-card{background:linear-gradient(135deg,rgba(41,128,185,0.15),rgba(41,128,185,0.05));border:1px solid rgba(41,128,185,0.3);border-radius:14px;padding:1.2rem;text-align:center}
+.stat-card .big{font-size:2.2rem;font-weight:900;color:var(--blue-light);line-height:1.2}
+.stat-card .big .unit{font-size:1rem}
+.stat-card .desc{font-size:.82rem;color:rgba(255,255,255,0.7);margin-top:.3rem}
+.data-note{font-size:.7rem;color:var(--red-soft);font-style:italic}
 
-/* ===== TRANSITION ===== */
-.transition{background:linear-gradient(180deg,#444 0%,#333 50%,#1a3a5c 100%);padding:2.5rem 1.5rem;text-align:center}
-.transition h2{color:#fff;font-size:1.3rem;font-weight:900;line-height:1.7;margin-bottom:1rem}
-.transition h2 .yellow{color:#ffe066}
-.transition p{color:rgba(255,255,255,0.7);font-size:.85rem}
+/* ===== COMPARISON ===== */
+.comparison{background:linear-gradient(180deg,var(--navy-light),var(--navy));padding:3rem 1.5rem;text-align:center}
+.compare-table{width:100%;max-width:480px;margin:0 auto;border-collapse:collapse;font-size:.78rem}
+.compare-table th{padding:.7rem .5rem;font-weight:700;font-size:.72rem}
+.compare-table th.free-col{background:rgba(231,76,60,0.15);color:var(--red-soft);border-radius:10px 0 0 0}
+.compare-table th.paid-col{background:rgba(212,160,23,0.15);color:var(--gold-light);border-radius:0 10px 0 0}
+.compare-table th.item-col{background:rgba(255,255,255,0.05);color:var(--gray);border-radius:0}
+.compare-table td{padding:.65rem .5rem;border-bottom:1px solid rgba(255,255,255,0.06)}
+.compare-table td.item{color:rgba(255,255,255,0.8);font-weight:600;text-align:left}
+.compare-table td.free{color:var(--red-soft);text-align:center}
+.compare-table td.paid{color:var(--gold-light);text-align:center;font-weight:700}
+.compare-table .x-mark{font-size:1.1rem}
+.compare-table .o-mark{font-size:1.1rem}
+
+/* ===== STORY ===== */
+.story{background:linear-gradient(180deg,var(--navy),#0d1b2a);padding:3rem 1.5rem;text-align:center}
+.story-img{width:80%;max-width:340px;border-radius:16px;margin:0 auto 1.5rem;display:block;box-shadow:0 8px 30px rgba(0,0,0,0.3);border:2px solid rgba(212,160,23,0.2)}
+.story-text{background:rgba(255,255,255,0.04);border-left:3px solid var(--gold);border-radius:0 12px 12px 0;padding:1.2rem 1.5rem;text-align:left;font-size:.88rem;color:rgba(255,255,255,0.8);line-height:2;max-width:480px;margin:0 auto}
+.story-text .hl{color:var(--gold-light);font-weight:700}
 
 /* ===== SOLUTION ===== */
-.solution{background:linear-gradient(180deg,#e8f4fd,#d4ecfa);padding:3rem 1.5rem;text-align:center}
-.solution .sol-intro{font-size:.85rem;color:#1a3a5c;font-weight:500;margin-bottom:.5rem}
-.solution h2{font-size:1.5rem;font-weight:900;color:#1a3a5c;margin-bottom:.3rem}
-.solution h2 .yellow-line{background:linear-gradient(transparent 60%,#ffe066 60%);padding:0 .2rem}
-.solution .sol-sub{font-size:.9rem;color:#555;margin-bottom:2rem}
-.benefit-cards{display:flex;flex-direction:column;gap:1.2rem;max-width:480px;margin:0 auto}
-.b-card{position:relative;border-radius:16px;overflow:hidden;box-shadow:0 6px 20px rgba(0,0,0,0.1)}
-.b-card img{width:100%;height:220px;object-fit:cover;display:block}
-.b-card-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,0.7));padding:1.5rem 1.2rem .8rem;color:#fff}
-.b-card-overlay .tag{display:inline-block;background:#e8c84e;color:#0a1628;font-size:.65rem;font-weight:700;padding:.2rem .6rem;border-radius:4px;margin-bottom:.4rem}
-.b-card-overlay h3{font-size:1rem;font-weight:700;line-height:1.5}
-.b-card-overlay p{font-size:.75rem;color:rgba(255,255,255,0.85);margin-top:.3rem}
+.solution{background:linear-gradient(180deg,#0d1b2a,#0f1e30);padding:3rem 1.5rem;text-align:center}
+.solution-img{width:85%;max-width:380px;border-radius:16px;margin:0 auto 1.5rem;display:block;box-shadow:0 12px 40px rgba(212,160,23,0.15);border:2px solid rgba(212,160,23,0.3)}
+.program-name{font-size:1.3rem;font-weight:900;color:var(--gold-light);margin-bottom:.3rem}
+.program-sub{font-size:.85rem;color:rgba(255,255,255,0.7);margin-bottom:1.5rem}
+.include-list{display:flex;flex-direction:column;gap:.8rem;max-width:460px;margin:0 auto}
+.include-item{display:flex;align-items:flex-start;gap:.8rem;background:rgba(212,160,23,0.06);border:1px solid rgba(212,160,23,0.15);border-radius:12px;padding:1rem;text-align:left}
+.include-num{background:linear-gradient(135deg,var(--gold),#c8a84e);color:#0a0a14;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:.8rem;flex-shrink:0}
+.include-text{font-size:.85rem;color:rgba(255,255,255,0.85);line-height:1.6}
+.include-text strong{color:var(--gold-light)}
 
-/* ===== VOICE ===== */
-.voice{background:linear-gradient(180deg,#d4ecfa,#e8f4fd);padding:3rem 1.5rem}
-.voice-title{text-align:center;font-size:1.4rem;font-weight:900;color:#1a3a5c;margin-bottom:.3rem}
-.voice-title .yellow-line{background:linear-gradient(transparent 60%,#ffe066 60%)}
-.voice-sub{text-align:center;font-size:.82rem;color:#777;margin-bottom:2rem}
-.v-card{background:#fff;border-radius:16px;overflow:hidden;margin-bottom:1.5rem;box-shadow:0 4px 16px rgba(0,0,0,0.06)}
-.v-card-header{display:flex;align-items:center;gap:1rem;padding:1.2rem}
-.v-card-avatar{width:64px;height:64px;border-radius:50%;object-fit:cover;border:3px solid #e8c84e}
-.v-card-info .name{font-size:.9rem;font-weight:700;color:#1a3a5c}
-.v-card-info .detail{font-size:.72rem;color:#999}
-.v-card-ba{display:flex;gap:.5rem;padding:0 1.2rem .8rem;align-items:center}
-.ba-box{flex:1;text-align:center;padding:.6rem;border-radius:8px}
-.ba-box.before{background:#eee}
-.ba-box.after{background:linear-gradient(135deg,#fff8e1,#fff3cc);border:2px solid #e8c84e}
-.ba-box .label{font-size:.6rem;font-weight:700;color:#999;text-transform:uppercase;margin-bottom:.2rem}
-.ba-box.after .label{color:#c8a84e}
-.ba-box .value{font-size:1.3rem;font-weight:900;color:#333}
-.ba-box.after .value{color:#c8a84e}
-.ba-arrow{font-size:1.5rem;color:#e8c84e;font-weight:700}
-.v-card-body{padding:0 1.2rem 1.2rem;font-size:.82rem;color:#555;line-height:1.8}
-.v-card-body .hl{color:#c8a84e;font-weight:700}
+/* ===== CURRICULUM ===== */
+.curriculum{background:var(--navy-light);padding:3rem 1.5rem;text-align:center}
+.month-cards{display:flex;flex-direction:column;gap:.8rem;max-width:480px;margin:0 auto}
+.month-card{display:flex;align-items:flex-start;gap:1rem;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:1rem;text-align:left}
+.month-badge{background:linear-gradient(135deg,var(--blue),#1a6fa0);color:#fff;padding:.3rem .7rem;border-radius:8px;font-size:.72rem;font-weight:700;white-space:nowrap;flex-shrink:0}
+.month-content h4{font-size:.9rem;font-weight:700;color:var(--blue-light);margin-bottom:.2rem}
+.month-content p{font-size:.8rem;color:rgba(255,255,255,0.65);line-height:1.6}
 
-/* ===== FEATURES ===== */
-.features{background:#f9f9f9;padding:3rem 1.5rem;text-align:center}
-.features h2{font-size:1.3rem;font-weight:900;color:#1a3a5c;margin-bottom:2rem}
-.features h2 .yellow-line{background:linear-gradient(transparent 60%,#ffe066 60%)}
-.feat-badges{display:flex;justify-content:center;gap:.8rem;flex-wrap:wrap;margin-bottom:2rem}
-.feat-badge{width:100px;height:100px;border-radius:50%;background:linear-gradient(135deg,#e8f4fd,#d4ecfa);display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 3px 12px rgba(0,0,0,0.06)}
-.feat-badge .icon{font-size:1.5rem;margin-bottom:.2rem}
-.feat-badge .txt{font-size:.68rem;font-weight:700;color:#1a3a5c;line-height:1.3}
+/* ===== SUCCESS ===== */
+.success{background:linear-gradient(180deg,var(--navy-light),var(--navy));padding:3rem 1.5rem}
+.success-card{background:rgba(255,255,255,0.04);border:1px solid rgba(212,160,23,0.15);border-radius:16px;overflow:hidden;margin-bottom:1.5rem}
+.success-header{display:flex;align-items:center;gap:1rem;padding:1.2rem}
+.success-avatar{width:60px;height:60px;border-radius:50%;object-fit:cover;border:2px solid var(--gold)}
+.success-info .name{font-size:.88rem;font-weight:700;color:#fff}
+.success-info .detail{font-size:.7rem;color:var(--gray)}
+.success-ba{display:flex;gap:.5rem;padding:0 1.2rem .8rem;align-items:center}
+.ba-box{flex:1;text-align:center;padding:.5rem;border-radius:8px}
+.ba-box.before{background:rgba(231,76,60,0.1);border:1px solid rgba(231,76,60,0.2)}
+.ba-box.after{background:rgba(212,160,23,0.1);border:1px solid rgba(212,160,23,0.3)}
+.ba-box .label{font-size:.6rem;font-weight:700;text-transform:uppercase;margin-bottom:.2rem}
+.ba-box.before .label{color:var(--red-soft)}
+.ba-box.after .label{color:var(--gold-light)}
+.ba-box .value{font-size:1.2rem;font-weight:900}
+.ba-box.before .value{color:var(--red-soft)}
+.ba-box.after .value{color:var(--gold-light)}
+.ba-arrow{font-size:1.3rem;color:var(--gold)}
+.success-body{padding:0 1.2rem 1.2rem;font-size:.82rem;color:rgba(255,255,255,0.7);line-height:1.8}
+.success-body .hl{color:var(--gold-light);font-weight:700}
+.success-note{text-align:center;font-size:.68rem;color:var(--red-soft);font-style:italic;margin-top:-.5rem;margin-bottom:1rem}
 
-/* ===== EMOTIONAL ===== */
-.emotional{background:linear-gradient(180deg,#e8f4fd,#fff);padding:3rem 2rem;text-align:center}
-.emotional h2{font-size:1.2rem;font-weight:900;color:#1a3a5c;line-height:1.8;margin-bottom:1.5rem}
-.emotional h2 .yellow-line{background:linear-gradient(transparent 60%,#ffe066 60%)}
-.emotional p{font-size:.88rem;color:#555;line-height:2;margin-bottom:1rem}
-.emotional .accent{color:#1a3a5c;font-weight:700}
+/* ===== PRICING ===== */
+.pricing{background:linear-gradient(180deg,var(--navy),#0d1b2a);padding:3rem 1.5rem;text-align:center}
+.price-card{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:1.5rem;margin-bottom:1rem;position:relative;transition:all .3s}
+.price-card.recommended{border-color:var(--gold);background:rgba(212,160,23,0.06);box-shadow:0 0 30px rgba(212,160,23,0.1)}
+.price-card.recommended::before{content:'おすすめ';position:absolute;top:-10px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,var(--gold),#c8a84e);color:#0a0a14;font-size:.68rem;font-weight:700;padding:.2rem .8rem;border-radius:10px}
+.price-plan{font-size:.82rem;font-weight:700;color:var(--gray);margin-bottom:.3rem}
+.price-amount{font-size:2rem;font-weight:900;color:#fff}
+.price-amount .yen{font-size:1rem;color:var(--gray)}
+.price-amount .tax{font-size:.7rem;color:var(--gray);font-weight:400}
+.price-features{list-style:none;margin-top:.8rem;text-align:left}
+.price-features li{font-size:.8rem;color:rgba(255,255,255,0.7);padding:.3rem 0;display:flex;align-items:center;gap:.5rem}
+.price-features li::before{content:'✓';color:var(--gold);font-weight:700}
+.price-split{font-size:.75rem;color:var(--gold-light);margin-top:.5rem}
+.price-warn{font-size:.72rem;color:var(--red-soft);margin-top:1.5rem;font-style:italic}
 
-/* ===== Q&A ===== */
-.qa{background:#fff;padding:3rem 1.5rem}
-.qa h2{text-align:center;font-size:1.3rem;font-weight:900;color:#1a3a5c;margin-bottom:2rem}
-.qa-item{margin-bottom:1.5rem}
-.qa-q{background:#1a3a5c;color:#fff;padding:.8rem 1rem;border-radius:10px 10px 0 0;font-size:.9rem;font-weight:700;display:flex;align-items:center;gap:.6rem}
-.qa-q .q-mark{background:#e8c84e;color:#0a1628;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:.85rem;flex-shrink:0}
-.qa-a{background:#f5f5f5;padding:1rem;border-radius:0 0 10px 10px;font-size:.85rem;color:#555;line-height:1.8;display:flex;gap:.6rem}
-.qa-a .a-mark{color:#e8c84e;font-weight:900;font-size:1.1rem;flex-shrink:0}
+/* ===== GUARANTEE ===== */
+.guarantee{background:var(--navy-light);padding:3rem 1.5rem;text-align:center}
+.guarantee-cards{display:flex;flex-direction:column;gap:1rem;max-width:440px;margin:0 auto}
+.guarantee-card{background:rgba(41,128,185,0.08);border:1px solid rgba(41,128,185,0.2);border-radius:14px;padding:1.2rem;text-align:center}
+.guarantee-card .icon{font-size:2rem;margin-bottom:.5rem}
+.guarantee-card h4{font-size:.95rem;font-weight:700;color:var(--blue-light);margin-bottom:.3rem}
+.guarantee-card p{font-size:.82rem;color:rgba(255,255,255,0.7);line-height:1.7}
+.guarantee-note{font-size:.7rem;color:var(--red-soft);margin-top:1rem;font-style:italic}
+
+/* ===== FAQ ===== */
+.faq{background:var(--navy);padding:3rem 1.5rem}
+.qa-item{margin-bottom:1.2rem}
+.qa-q{background:rgba(212,160,23,0.1);border:1px solid rgba(212,160,23,0.2);color:#fff;padding:.8rem 1rem;border-radius:12px 12px 0 0;font-size:.88rem;font-weight:700;display:flex;align-items:center;gap:.6rem}
+.qa-q .q-mark{background:var(--gold);color:#0a0a14;width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:.8rem;flex-shrink:0}
+.qa-a{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.06);border-top:none;padding:1rem;border-radius:0 0 12px 12px;font-size:.82rem;color:rgba(255,255,255,0.7);line-height:1.8;display:flex;gap:.6rem}
+.qa-a .a-mark{color:var(--gold);font-weight:900;font-size:1rem;flex-shrink:0}
+
+/* ===== URGENCY ===== */
+.urgency{background:linear-gradient(180deg,rgba(231,76,60,0.1),var(--navy));padding:2.5rem 1.5rem;text-align:center}
+.urgency-box{background:rgba(231,76,60,0.06);border:2px solid rgba(231,76,60,0.3);border-radius:16px;padding:1.5rem;max-width:440px;margin:0 auto}
+.urgency-box h3{font-size:1.1rem;font-weight:900;color:var(--red-soft);margin-bottom:.5rem}
+.urgency-box p{font-size:.85rem;color:rgba(255,255,255,0.7);line-height:1.8}
+.urgency-box .reason{font-size:.78rem;color:var(--gray);margin-top:.8rem;font-style:italic}
+
+/* ===== BONUS ===== */
+.bonus{background:var(--navy-light);padding:3rem 1.5rem;text-align:center}
+.bonus-list{display:flex;flex-direction:column;gap:.8rem;max-width:460px;margin:0 auto}
+.bonus-item{display:flex;align-items:center;gap:.8rem;background:rgba(212,160,23,0.06);border:1px solid rgba(212,160,23,0.15);border-radius:10px;padding:.8rem 1rem;text-align:left}
+.bonus-tag{background:linear-gradient(135deg,var(--gold),#c8a84e);color:#0a0a14;padding:.2rem .5rem;border-radius:6px;font-size:.65rem;font-weight:700;white-space:nowrap;flex-shrink:0}
+.bonus-text{font-size:.82rem;color:rgba(255,255,255,0.85);line-height:1.5}
+
+/* ===== FOUNDER ===== */
+.founder{background:linear-gradient(180deg,var(--navy-light),var(--navy));padding:3rem 1.5rem;text-align:center}
+.founder-img{width:160px;height:160px;border-radius:50%;object-fit:cover;margin:0 auto 1rem;display:block;border:3px solid var(--gold);box-shadow:0 8px 25px rgba(0,0,0,0.3)}
+.founder-name{font-size:1rem;font-weight:700;color:#fff;margin-bottom:.3rem}
+.founder-role{font-size:.78rem;color:var(--gold);margin-bottom:1rem}
+.founder-text{font-size:.85rem;color:rgba(255,255,255,0.75);line-height:2;text-align:left;max-width:440px;margin:0 auto}
+.founder-text .hl{color:var(--gold-light);font-weight:700}
+
+/* ===== CLOSING ===== */
+.closing{background:linear-gradient(180deg,var(--navy),#0d1b2a);padding:3rem 1.5rem;text-align:center}
+.closing-img{width:80%;max-width:340px;border-radius:16px;margin:0 auto 1.5rem;display:block;box-shadow:0 12px 40px rgba(212,160,23,0.1);border:2px solid rgba(212,160,23,0.2)}
+.closing h2{font-size:1.2rem;font-weight:900;color:#fff;line-height:1.8;margin-bottom:1rem}
+.closing h2 .gold{color:var(--gold-light)}
+.closing p{font-size:.88rem;color:rgba(255,255,255,0.7);line-height:2;margin-bottom:1rem}
 
 /* ===== FOOTER ===== */
-.footer{background:#1a3a5c;padding:2rem 1.5rem;text-align:center;color:rgba(255,255,255,0.7);font-size:.72rem}
-.footer a{color:rgba(255,255,255,0.7);text-decoration:none;margin:0 .5rem}
+.footer{background:#050510;padding:2rem 1.5rem;text-align:center;color:rgba(255,255,255,0.4);font-size:.72rem}
+.footer a{color:rgba(255,255,255,0.4);text-decoration:none;margin:0 .5rem}
 .footer a:hover{color:#fff}
-.footer .copy{margin-top:.8rem;color:rgba(255,255,255,0.4)}
+.footer .copy{margin-top:.8rem;color:rgba(255,255,255,0.25)}
 
-/* ===== 7 BENEFITS ===== */
-.benefits7{background:linear-gradient(180deg,#1a3a5c,#0a1628);padding:3rem 1.5rem;text-align:center;color:#fff}
-.benefits7 h2{font-size:1.3rem;font-weight:900;margin-bottom:.5rem}
-.benefits7 h2 .gold{color:#e8c84e}
-.benefits7 .b7-sub{font-size:.8rem;color:rgba(255,255,255,0.6);margin-bottom:2rem}
-.b7-list{display:flex;flex-direction:column;gap:.8rem;max-width:440px;margin:0 auto}
-.b7-item{display:flex;align-items:center;gap:.8rem;background:rgba(255,255,255,0.07);border:1px solid rgba(232,200,78,0.2);border-radius:10px;padding:.8rem 1rem;text-align:left}
-.b7-num{background:linear-gradient(135deg,#c8a84e,#e8c84e);color:#0a1628;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:.85rem;flex-shrink:0}
-.b7-text{font-size:.82rem;font-weight:500;line-height:1.5}
+/* ===== LINE SVG ===== */
+.line-svg{width:26px;height:26px;fill:#fff}
 
 /* ===== RESPONSIVE ===== */
 @media(max-width:640px){
-  .hero h1{font-size:1.35rem}
-  .pain-title{font-size:1.25rem}
-  .solution h2{font-size:1.25rem}
-  .b-card img{height:180px}
-  .cta-btn{font-size:1rem;padding:.9rem 2rem}
+  .hero h1{font-size:1.3rem}
+  .section-title{font-size:1.2rem}
+  .price-amount{font-size:1.7rem}
+  .cta-btn{font-size:.95rem;padding:.9rem 1.8rem}
 }
+
+/* ===== LEGAL ===== */
+.legal-note{font-size:.68rem;color:rgba(255,255,255,0.4);text-align:center;padding:1rem 1.5rem;line-height:1.7}
 </style>
 </head>
 <body>
 <div class="lp-wrap">
 
-  <!-- ====== HERO ====== -->
+  <!-- ====== SECTION 1: HERO ====== -->
   <section class="hero">
-    <span class="hero-badge">副業 × 投資 × 公営ギャンブル攻略</span>
-    <img class="hero-main-img" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop&crop=face" alt="成功イメージ">
-    <h1>あなたの<span class="accent">収入の柱</span>を、<br>ゼロから設計する。</h1>
-    <p class="sub">プロが厳選した7大特典を無料でお届け</p>
-    <div class="services">
-      <span>SNSマーケティング</span>
-      <span>せどり</span>
-      <span>FX自動売買</span>
-      <span>競艇/竵馬攻略</span>
-    </div>
+    <span class="hero-badge">本気の人だけに届けたい</span>
+    <img class="hero-img" src="img/anime_hero.png" alt="決意する女性">
+    <h1><span class="strike">「無料」</span>に騙され続けた<br>あなたへ。<br><span class="gold">SNS副業で本気で稼ぎたい</span>なら、<br>「無料の壁」を越える覚悟が必要です。</h1>
+    <p class="sub">無料コンテンツだけで収益化できた人は<br><strong>わずか3%</strong>という現実をご存知ですか？</p>
   </section>
 
   <!-- ====== CTA 1 ====== -->
   <section class="cta-section">
-    <p class="limit">今だけ！ 先着<span class="num">300</span>名様限定</p>
+    <p class="limit">毎月先着<span class="num">5</span>名様限定</p>
     <a href="https://lin.ee/XXXXX" class="cta-btn">
-      <svg viewBox="0 0 24 24"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.271.173-.508.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
-      LINEで無料登録する
+      <svg class="line-svg" viewBox="0 0 24 24"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.271.173-.508.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+      まずは無料セミナーに参加する
     </a>
-    <p class="cta-note">※ 期間限定・いつでもブロックOK</p>
+    <p class="cta-note">※ LINE登録で無料セミナーにご招待</p>
   </section>
 
-  <!-- ====== PAIN ====== -->
-  <section class="pain">
-    <h2 class="pain-title">こんな<span class="yellow">お悩み</span><br>ありませんか？</h2>
-    <div class="bubble-list">
-      <div class="bubble">副業に興味はあるけど<br><span class="hl">初期費用がかかるのが不安</span></div>
-      <div class="bubble">投資で<span class="hl">何から始めればいいか</span><br>わからない</div>
-      <div class="bubble">SNSを仕事にしたい！<br>でも<span class="hl">どうやって？</span></div>
-      <div class="bubble">副業やりたいけど、<br><span class="hl">時間がない</span></div>
-      <div class="bubble">自分に合った<span class="hl">稼ぎ方</span>が<br>見つからない</div>
-    </div>
-    <img class="pain-img" src="https://images.unsplash.com/photo-1616091216791-a5360b5fc78a?w=400&h=500&fit=crop" alt="悩む女性">
-  </section>
-
-  <!-- ====== STRUGGLE ====== -->
-  <section class="struggle">
-    <p class="struggle-label">でも、副業って言われても…</p>
-    <div class="struggle-cards">
-      <div class="s-card">
-        <img class="s-card-img" src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=220&h=220&fit=crop" alt="高額費用">
-        <div class="s-card-text">
-          <p><span class="check">&#9745;</span>副業は高額費用が<br><span class="hl">取られるから怖い</span></p>
-        </div>
+  <!-- ====== SECTION 2: PROBLEM (3 WALLS) ====== -->
+  <section class="problem">
+    <h2 class="section-title">無料サロンで学んだのに、<br>なぜ<span class="red">結果が出ない</span>のか？</h2>
+    <p class="section-sub">無料コンテンツには「3つの壁」があります</p>
+    <div class="wall-cards">
+      <div class="wall-card" data-num="01">
+        <h3><span class="icon">📖</span>壁① 情報が浅い</h3>
+        <p>無料で公開できるのは「入口」だけ。収益化の核心ノウハウは、無料コンテンツには含まれていません。表面的な知識だけでは、いつまでも稼げないまま。</p>
       </div>
-      <div class="s-card">
-        <img class="s-card-img" src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=220&h=220&fit=crop" alt="時間がない">
-        <div class="s-card-text">
-          <p><span class="check">&#9745;</span>仕事優先の毎日で<br><span class="hl">時間がない</span></p>
-        </div>
+      <div class="wall-card" data-num="02">
+        <h3><span class="icon">🧩</span>壁② 体系的でない</h3>
+        <p>断片的な情報を自分で繋ぎ合わせるのは至難の業。「何からやればいいか」が永遠にわからず、時間だけが過ぎていく。</p>
       </div>
-      <div class="s-card">
-        <img class="s-card-img" src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=220&h=220&fit=crop" alt="何をすれば">
-        <div class="s-card-text">
-          <p><span class="check">&#9745;</span>何を始めたらいいか<br><span class="hl">わからない</span></p>
-        </div>
+      <div class="wall-card" data-num="03">
+        <h3><span class="icon">🔇</span>壁③ 個別フィードバックがない</h3>
+        <p>自分のやり方が合っているのか、誰にも確認できない。間違った方向に努力し続けてしまう。</p>
       </div>
     </div>
+    <img class="problem-img" src="img/anime_problem.png" alt="悩む女性">
   </section>
 
-  <!-- ====== TRANSITION ====== -->
-  <section class="transition">
-    <h2>でも、<br><span class="yellow">それで後悔しない</span>と<br>諦めますか？</h2>
-    <p>人生を変えるのは、いつだって「最初の一歩」です。</p>
+  <!-- ====== SECTION 3: DATA ====== -->
+  <section class="data">
+    <h2 class="section-title">数字が物語る<br><span class="gold">無料の限界</span></h2>
+    <p class="section-sub">自社調査データより</p>
+    <div class="stat-cards">
+      <div class="stat-card">
+        <p class="big">97<span class="unit">%</span></p>
+        <p class="desc">が「無料では限界がある」と感じている</p>
+      </div>
+      <div class="stat-card">
+        <p class="big">1.5<span class="unit">ヶ月</span></p>
+        <p class="desc">無料サロンの平均継続期間</p>
+      </div>
+      <div class="stat-card">
+        <p class="big">3<span class="unit">%</span></p>
+        <p class="desc">無料コンテンツだけで収益化できた割合</p>
+      </div>
+    </div>
+    <p class="data-note">※ 自社アンケート調査に基づく参考値です。個人差があります。</p>
   </section>
 
-  <!-- ====== SOLUTION ====== -->
-  <section class="solution">
-    <p class="sol-intro">\\  ZEROなら  //</p>
-    <h2><span class="yellow-line">0円で理想の副業</span>を<br>始められます！</h2>
-    <p class="sol-sub">初心者から経験者まで、<br>ライフスタイルに合った収益化手法を選べます。</p>
-    <div class="benefit-cards">
-      <div class="b-card">
-        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&h=360&fit=crop" alt="SNSマーケティング">
-        <div class="b-card-overlay">
-          <span class="tag">SNS</span>
-          <h3>SNSマーケティング</h3>
-          <p>Instagram・TikTokで収益化。未経験でもOK</p>
-        </div>
-      </div>
-      <div class="b-card">
-        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=360&fit=crop" alt="せどり">
-        <div class="b-card-overlay">
-          <span class="tag">物販</span>
-          <h3>せどり・物販ビジネス</h3>
-          <p>仕入れから販売まで完全マニュアル付き</p>
-        </div>
-      </div>
-      <div class="b-card">
-        <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&h=360&fit=crop" alt="FX自動売買">
-        <div class="b-card-overlay">
-          <span class="tag">投資</span>
-          <h3>FX自動売買</h3>
-          <p>プロ設定のEAで自動的に資産運用</p>
-        </div>
-      </div>
-      <div class="b-card">
-        <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?w=600&h=360&fit=crop" alt="競艇・竵馬攻略">
-        <div class="b-card-overlay">
-          <span class="tag">攻略</span>
-          <h3>競艇/競馬データ攻略</h3>
-          <p>統計データに基づく回収率120%超の実縞</p>
-        </div>
-      </div>
+  <!-- ====== SECTION 4: COMPARISON ====== -->
+  <section class="comparison">
+    <h2 class="section-title">一目でわかる<br><span class="red">無料</span> vs <span class="gold">有料</span>の差</h2>
+    <p class="section-sub">あなたはどちらを選びますか？</p>
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th class="item-col">比較項目</th>
+          <th class="free-col">無料サロン</th>
+          <th class="paid-col">本プログラム</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="item">カリキュラムの深さ</td>
+          <td class="free">入口のみ</td>
+          <td class="paid">収益化まで完全網羅</td>
+        </tr>
+        <tr>
+          <td class="item">個別指導</td>
+          <td class="free"><span class="x-mark">✕</span> なし</td>
+          <td class="paid"><span class="o-mark">◎</span> 専属コーチ</td>
+        </tr>
+        <tr>
+          <td class="item">テンプレート</td>
+          <td class="free"><span class="x-mark">✕</span> なし</td>
+          <td class="paid"><span class="o-mark">◎</span> 20種以上</td>
+        </tr>
+        <tr>
+          <td class="item">コミュニティ</td>
+          <td class="free">大人数で埋もれる</td>
+          <td class="paid">少人数制で密な繋がり</td>
+        </tr>
+        <tr>
+          <td class="item">サポート期間</td>
+          <td class="free">放置されがち</td>
+          <td class="paid">6ヶ月間の伴走型</td>
+        </tr>
+        <tr>
+          <td class="item">成功率</td>
+          <td class="free">約3%</td>
+          <td class="paid">受講生の多くが成果を実感</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ====== SECTION 5: EMPATHY STORY ====== -->
+  <section class="story">
+    <h2 class="section-title">「私も<span class="gold">同じ</span>でした」</h2>
+    <p class="section-sub">運営者の転換体験</p>
+    <img class="story-img" src="img/anime_story.png" alt="共感ストーリー">
+    <div class="story-text">
+      私も最初は無料の情報だけでやっていました。YouTube、無料サロン、SNSの投稿…。でも<span class="hl">半年経っても収入はゼロ</span>。<br><br>
+      「やり方が間違っていた」ことにすら気づけなかったんです。<br><br>
+      解決したのは、たった一つの決断でした。<br><span class="hl">「本気の環境に身を置く」</span>こと。<br><br>
+      体系的なカリキュラムと、プロからの個別フィードバック。<br>それだけで、3ヶ月後には月収20万円を超えました。
     </div>
   </section>
 
   <!-- ====== CTA 2 ====== -->
   <section class="cta-section">
-    <p class="limit">あなたも<span class="num">0</span>円で副業を始めよう</p>
+    <p class="limit">あなたも「<span class="gold" style="color:var(--gold-light)">無料の壁</span>」を越えませんか？</p>
     <a href="https://lin.ee/XXXXX" class="cta-btn">
-      <svg viewBox="0 0 24 24"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.271.173-.508.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
-      LINEで今すぐ受け取る
+      <svg class="line-svg" viewBox="0 0 24 24"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.271.173-.508.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+      無料セミナーに参加する
     </a>
-    <p class="cta-note">※ 7大特典を無料プレゼント中</p>
+    <p class="cta-note">※ セミナー後、希望者のみプログラムをご案内</p>
   </section>
 
-  <!-- ====== VOICE ====== -->
-  <section class="voice">
-    <h2 class="voice-title"><span class="yellow-line">利用者の声</span></h2>
-    <p class="voice-sub">ZEROをきっかけに人生が変わった方々</p>
+  <!-- ====== SECTION 6: SOLUTION ====== -->
+  <section class="solution">
+    <h2 class="section-title">\\  解決策  //</h2>
+    <img class="solution-img" src="img/anime_solution.png" alt="プログラム紹介">
+    <p class="program-name">SNS副業マスタープログラム</p>
+    <p class="program-sub">無料では手に入らない、収益化の「核心」だけを凝縮</p>
+    <div class="include-list">
+      <div class="include-item">
+        <span class="include-num">1</span>
+        <span class="include-text"><strong>収益化全体設計図</strong><br>月収30万円までのロードマップ</span>
+      </div>
+      <div class="include-item">
+        <span class="include-num">2</span>
+        <span class="include-text"><strong>収益化テンプレート集</strong><br>そのまま使えるテンプレート20種以上</span>
+      </div>
+      <div class="include-item">
+        <span class="include-num">3</span>
+        <span class="include-text"><strong>専属コーチの個別指導</strong><br>6ヶ月間のマンツーマンサポート</span>
+      </div>
+      <div class="include-item">
+        <span class="include-num">4</span>
+        <span class="include-text"><strong>少人数制コミュニティ</strong><br>成果を出している仲間と繋がれる環境</span>
+      </div>
+      <div class="include-item">
+        <span class="include-num">5</span>
+        <span class="include-text"><strong>成功事例データベース</strong><br>実際の成功アカウントを分析・学習</span>
+      </div>
+    </div>
+  </section>
 
-    <div class="v-card">
-      <div class="v-card-header">
-        <img class="v-card-avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=128&h=128&fit=crop&crop=face" alt="ゆきさん">
-        <div class="v-card-info">
-          <p class="name">ゆきさん（26歳）</p>
+  <!-- ====== SECTION 7: CURRICULUM ====== -->
+  <section class="curriculum">
+    <h2 class="section-title">6ヶ月の<span class="gold">カリキュラム</span></h2>
+    <p class="section-sub">「無料とは次元が違う」を実感できる体系的プログラム</p>
+    <div class="month-cards">
+      <div class="month-card">
+        <span class="month-badge">Month 1</span>
+        <div class="month-content">
+          <h4>基盤構築期</h4>
+          <p>収益化前提のアカウント設計。無料にはない「売れるプロフィール」の作り方</p>
+        </div>
+      </div>
+      <div class="month-card">
+        <span class="month-badge">Month 2</span>
+        <div class="month-content">
+          <h4>コンテンツ量産体制</h4>
+          <p>テンプレート活用で毎日10分の投稿作成。効率的な運用方法を習得</p>
+        </div>
+      </div>
+      <div class="month-card">
+        <span class="month-badge">Month 3</span>
+        <div class="month-content">
+          <h4>フォロワー1000人突破</h4>
+          <p>アルゴリズム攻略とリール戦略で、着実にフォロワーを増やす</p>
+        </div>
+      </div>
+      <div class="month-card">
+        <span class="month-badge">Month 4</span>
+        <div class="month-content">
+          <h4>収益化スタート</h4>
+          <p>アフィリエイト・PR案件の獲得方法を実践。初収益を達成</p>
+        </div>
+      </div>
+      <div class="month-card">
+        <span class="month-badge">Month 5</span>
+        <div class="month-content">
+          <h4>自社商品販売</h4>
+          <p>デジタル商品作成と販売導線の構築。収益の柱を増やす</p>
+        </div>
+      </div>
+      <div class="month-card">
+        <span class="month-badge">Month 6</span>
+        <div class="month-content">
+          <h4>自動収益化</h4>
+          <p>仕組み化と月収30万円の安定化。自由な時間を手に入れる</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SECTION 8: SUCCESS STORIES ====== -->
+  <section class="success">
+    <h2 class="section-title" style="text-align:center;margin-bottom:2rem">「無料では失敗」→<br>「<span class="gold">有料で成功</span>」のリアル</h2>
+
+    <div class="success-card">
+      <div class="success-header">
+        <img class="success-avatar" src="img/anime_voice1.png" alt="あやかさん">
+        <div class="success-info">
+          <p class="name">あやかさん（28歳）</p>
           <p class="detail">会社員 → SNS副業</p>
         </div>
       </div>
-      <div class="v-card-ba">
+      <div class="success-ba">
         <div class="ba-box before">
           <p class="label">Before</p>
-          <p class="value">未経験</p>
+          <p class="value">収入ゼロ</p>
         </div>
-        <span class="ba-arrow">&#10132;</span>
+        <span class="ba-arrow">▶</span>
         <div class="ba-box after">
           <p class="label">After</p>
-          <p class="value">月12万円</p>
+          <p class="value">月収8万円</p>
         </div>
       </div>
-      <div class="v-card-body">
-        SNS運用なんて自分には無理だと思っていました。でもZEROの教材は初心者向けで分かりやすく、<span class="hl">3ヶ月目で月収12万円</span>を達成。無料で学べる環境に感謝しています。
+      <div class="success-body">
+        無料サロンに3つ入ったけど収入ゼロ。本プログラムに切り替えて<span class="hl">2ヶ月で月収8万円を達成</span>。「何が間違っていたか」がやっとわかりました。
       </div>
     </div>
 
-    <div class="v-card">
-      <div class="v-card-header">
-        <img class="v-card-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=128&h=128&fit=crop&crop=face" alt="たくやさん">
-        <div class="v-card-info">
-          <p class="name">たくやさん（34歳）</p>
-          <p class="detail">会社員 → 競艇データ攻略</p>
+    <div class="success-card">
+      <div class="success-header">
+        <img class="success-avatar" src="img/anime_voice2.png" alt="けいたさん">
+        <div class="success-info">
+          <p class="name">けいたさん（35歳）</p>
+          <p class="detail">フリーター → SNS起業</p>
         </div>
       </div>
-      <div class="v-card-ba">
+      <div class="success-ba">
         <div class="ba-box before">
           <p class="label">Before</p>
-          <p class="value">回収率60%</p>
+          <p class="value">半年間成果ゼロ</p>
         </div>
-        <span class="ba-arrow">&#10132;</span>
+        <span class="ba-arrow">▶</span>
         <div class="ba-box after">
           <p class="label">After</p>
-          <p class="value">回収率120%</p>
+          <p class="value">月収15万円</p>
         </div>
       </div>
-      <div class="v-card-body">
-        それまで感覤で買っていた競艇が、ZEROの<span class="hl">データ分析テンプレート</span>を使い始めてから回収率が2倍に。統計に基づいたアプローチの威力を実感しました。
+      <div class="success-body">
+        YouTubeの無料情報で半年頑張ったが成果ゼロ。本プログラムで<span class="hl">「何が間違っていたか」が明確に</span>なり、3ヶ月で月収15万円。
       </div>
     </div>
 
-    <div class="v-card">
-      <div class="v-card-header">
-        <img class="v-card-avatar" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=128&h=128&fit=crop&crop=face" alt="みほさん">
-        <div class="v-card-info">
-          <p class="name">みほさん（41歳）</p>
-          <p class="detail">主婦 → FX自動売買</p>
+    <div class="success-card">
+      <div class="success-header">
+        <img class="success-avatar" src="img/anime_voice3.png" alt="まりこさん">
+        <div class="success-info">
+          <p class="name">まりこさん（42歳）</p>
+          <p class="detail">主婦 → 在宅ワーク</p>
         </div>
       </div>
-      <div class="v-card-ba">
+      <div class="success-ba">
         <div class="ba-box before">
           <p class="label">Before</p>
-          <p class="value">投資未経験</p>
+          <p class="value">情報迷子</p>
         </div>
-        <span class="ba-arrow">&#10132;</span>
+        <span class="ba-arrow">▶</span>
         <div class="ba-box after">
           <p class="label">After</p>
-          <p class="value">月8万円</p>
+          <p class="value">月収12万円</p>
         </div>
       </div>
-      <div class="v-card-body">
-        投資は怖いイメージしかなかったのですが、ZEROの<span class="hl">FX自動売買のEA設定</span>を使ったら、ほぼ放置で安定した収入に。家事の合間に資産が増えていくのは嬉しいです。
+      <div class="success-body">
+        無料の特典PDFを集めまくったが全く整理できず。<span class="hl">体系的なカリキュラム</span>で迷わず進められ、4ヶ月で安定収入に。
       </div>
     </div>
+
+    <p class="success-note">※ 個人の実績であり、成果を保証するものではありません</p>
   </section>
 
-  <!-- ====== 7 BENEFITS ====== -->
-  <section class="benefits7">
-    <h2>LINE登録で<span class="gold">7大特典</span><br>すべて無料プレゼント</h2>
-    <p class="b7-sub">プロが厳選した収益化ノウハウを完全網羅</p>
-    <div class="b7-list">
-      <div class="b7-item"><span class="b7-num">1</span><span class="b7-text">SNS収益化 完全ロードマップ</span></div>
-      <div class="b7-item"><span class="b7-num">2</span><span class="b7-text">せどり 仕入れ先リスト＆利益計算シート</span></div>
-      <div class="b7-item"><span class="b7-num">3</span><span class="b7-text">FX自動売買 EA初期設定マニュアル</span></div>
-      <div class="b7-item"><span class="b7-num">4</span><span class="b7-text">競艇/競馬 データ分析テンプレート</span></div>
-      <div class="b7-item"><span class="b7-num">5</span><span class="b7-text">副業適性診断シート</span></div>
-      <div class="b7-item"><span class="b7-num">6</span><span class="b7-text">税金・確定申告 かんたんガイド</span></div>
-      <div class="b7-item"><span class="b7-num">7</span><span class="b7-text">プロ講師による無料個別相談（1回）</span></div>
+  <!-- ====== SECTION 9: PRICING ====== -->
+  <section class="pricing">
+    <h2 class="section-title"><span class="gold">価格プラン</span></h2>
+    <p class="section-sub">あなたの本気度に合わせて選べる3つのプラン</p>
+
+    <div class="price-card">
+      <p class="price-plan">梅プラン</p>
+      <p class="price-amount"><span class="yen">¥</span>29,800<span class="tax">（税込）</span></p>
+      <ul class="price-features">
+        <li>動画教材（全カリキュラム対応）</li>
+        <li>収益化テンプレート集</li>
+      </ul>
+    </div>
+
+    <div class="price-card recommended">
+      <p class="price-plan">竹プラン</p>
+      <p class="price-amount"><span class="yen">¥</span>98,000<span class="tax">（税込）</span></p>
+      <ul class="price-features">
+        <li>動画教材（全カリキュラム対応）</li>
+        <li>収益化テンプレート集</li>
+        <li>個別コーチング月2回</li>
+        <li>少人数制コミュニティ参加</li>
+      </ul>
+      <p class="price-split">分割払い対応：月々 約4,900円×20回</p>
+    </div>
+
+    <div class="price-card">
+      <p class="price-plan">松プラン</p>
+      <p class="price-amount"><span class="yen">¥</span>198,000<span class="tax">（税込）</span></p>
+      <ul class="price-features">
+        <li>全カリキュラム・テンプレート</li>
+        <li>専属コーチ6ヶ月間</li>
+        <li>少人数制コミュニティ参加</li>
+        <li>成功事例データベースアクセス</li>
+        <li>サポート期間延長制度あり</li>
+      </ul>
+      <p class="price-split">分割払い対応：月々 約4,950円×40回（コーヒー代より安い！）</p>
+    </div>
+
+    <p class="price-warn">⚠ 価格は予告なく変更する場合があります</p>
+  </section>
+
+  <!-- ====== SECTION 10: GUARANTEE ====== -->
+  <section class="guarantee">
+    <h2 class="section-title">「有料だからこそ」の<br><span class="gold">安心保証</span></h2>
+    <p class="section-sub">リスクを最小限に抑える2つの保証</p>
+    <div class="guarantee-cards">
+      <div class="guarantee-card">
+        <p class="icon">🛡️</p>
+        <h4>30日間返金保証</h4>
+        <p>内容にご満足いただけなければ、30日以内であれば全額返金いたします。</p>
+      </div>
+      <div class="guarantee-card">
+        <p class="icon">🤝</p>
+        <h4>サポート期間延長制度</h4>
+        <p>松プランご利用の方で、6ヶ月で収益が出なかった場合、サポート期間を延長いたします。</p>
+      </div>
+    </div>
+    <p class="guarantee-note">※ 保証の適用には条件があります。詳細は個別相談でご説明します。</p>
+  </section>
+
+  <!-- ====== SECTION 11: FAQ ====== -->
+  <section class="faq">
+    <h2 class="section-title" style="text-align:center;margin-bottom:2rem">よくある<span class="gold">質問</span></h2>
+
+    <div class="qa-item">
+      <div class="qa-q"><span class="q-mark">Q</span>無料で十分じゃないんですか？</div>
+      <div class="qa-a"><span class="a-mark">A</span>無料コンテンツは「入口」としては有効ですが、収益化の核心部分は含まれていません。自社調査では、無料だけで収益化できた方は約3%でした。本プログラムでは、その「足りない部分」を体系的に提供しています。</div>
+    </div>
+    <div class="qa-item">
+      <div class="qa-q"><span class="q-mark">Q</span>高いんじゃないですか？</div>
+      <div class="qa-a"><span class="a-mark">A</span>梅プランは29,800円から。分割払いにも対応しており、月々約2,500円〜始められます。収益化できれば数週間で回収できる金額です。また30日間返金保証もあるのでご安心ください。</div>
+    </div>
+    <div class="qa-item">
+      <div class="qa-q"><span class="q-mark">Q</span>未経験でも大丈夫ですか？</div>
+      <div class="qa-a"><span class="a-mark">A</span>はい。受講生の多くが未経験からスタートしています。むしろ無料コンテンツで変なクセがついていない分、正しいやり方を素直に吸収できるメリットがあります。</div>
+    </div>
+    <div class="qa-item">
+      <div class="qa-q"><span class="q-mark">Q</span>時間がなくても続けられますか？</div>
+      <div class="qa-a"><span class="a-mark">A</span>1日10〜30分から始められるカリキュラムです。テンプレートを活用すれば、投稿作成も効率的。忙しい会社員や主婦の方にも多くご利用いただいています。</div>
+    </div>
+    <div class="qa-item">
+      <div class="qa-q"><span class="q-mark">Q</span>途中で辞められますか？</div>
+      <div class="qa-a"><span class="a-mark">A</span>はい。30日間の返金保証期間内であれば、全額返金で退会できます。無理な引き止めは一切行いません。</div>
     </div>
   </section>
 
-  <!-- ====== FEATURES ====== -->
-  <section class="features">
-    <h2>リスクゼロで始める<br><span class="yellow-line">収入の柱づくり</span></h2>
-    <div class="feat-badges">
-      <div class="feat-badge"><span class="icon">&#128640;</span><span class="txt">未経験<br>OK</span></div>
-      <div class="feat-badge"><span class="icon">&#129309;</span><span class="txt">安心<br>サポート</span></div>
-      <div class="feat-badge"><span class="icon">&#128176;</span><span class="txt">完全<br>無料</span></div>
-      <div class="feat-badge"><span class="icon">&#128202;</span><span class="txt">4つの<br>収益源</span></div>
+  <!-- ====== SECTION 12: URGENCY ====== -->
+  <section class="urgency">
+    <div class="urgency-box">
+      <h3>毎月先着5名様限定</h3>
+      <p>個別指導の品質を維持するため、<br>毎月の受付人数を限定しています。</p>
+      <p class="reason">※ コーチ1人あたりの担当人数を制限し、一人ひとりに質の高いサポートを提供するためです。</p>
     </div>
   </section>
 
-  <!-- ====== EMOTIONAL ====== -->
-  <section class="emotional">
-    <h2>あなたの人生、<br>このままで本当に<br><span class="yellow-line">良いですか？</span></h2>
-    <p>「今のまま」では、何も変わりません。<br><span class="accent">変化は、行動から生まれます。</span></p>
-    <p>「私にできるだろうか…」</p>
-    <p>誰もが最初は「ゼロ」からのスタートでした。<br>ZEROで副業を始めた先輩たちも、<br>最初は未経験で、不安の中から始めました。</p>
-    <p>それでも行動したからこそ、<br>"今の自由" を手に入れています。</p>
-    <p>大切なのは、<br><span class="accent">「一歩踏み出す勇気」</span>を持つこと。</p>
-    <p>あなたの中には、<br>まだ眠っている可能性があります。<br>ZEROは、その可能性を引き出し、<br><span class="accent">0円で挑戦できる安心のサポート体制</span>で、<br>あなたの「新しい一歩」を全力で応援します。</p>
-  </section>
-
-  <!-- ====== CTA 3 ====== -->
-  <section class="cta-section">
-    <p class="limit">先着<span class="num">300</span>名様限定</p>
-    <a href="https://lin.ee/XXXXX" class="cta-btn">
-      <svg viewBox="0 0 24 24"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.271.173-.508.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
-      LINEで無料登録する
+  <!-- ====== SECTION 13: CTA 3 ====== -->
+  <section class="cta-section" style="padding:2.5rem 1.5rem">
+    <p class="limit" style="font-size:.95rem;margin-bottom:1rem">まずは話を聞いてみませんか？</p>
+    <a href="https://lin.ee/XXXXX" class="cta-btn" style="font-size:1.05rem;padding:1rem 2.2rem">
+      <svg class="line-svg" viewBox="0 0 24 24"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.271.173-.508.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+      LINE登録で無料セミナーに参加
     </a>
-    <p class="cta-note">※ 今だけ7大特典を無料プレゼント</p>
+    <p class="cta-note">※ 強引なセールスは一切ありません</p>
   </section>
 
-  <!-- ====== Q&A ====== -->
-  <section class="qa">
-    <h2>よくある質問</h2>
-    <div class="qa-item">
-      <div class="qa-q"><span class="q-mark">Q</span>未経験でも本当に大丈夫ですか？</div>
-      <div class="qa-a"><span class="a-mark">A</span>はい。ZEROの利用者の約9割が未経験からスタートしています。初心者向けの教材とサポート体制が充実しているので安心して始められます。</div>
-    </div>
-    <div class="qa-item">
-      <div class="qa-q"><span class="q-mark">Q</span>本当に無料で始められますか？</div>
-      <div class="qa-a"><span class="a-mark">A</span>はい。LINE登録・教材・サポートすべて無料です。初期費用・月額費用は一切かかりません。金銭的リスクゼロで始められます。</div>
-    </div>
-    <div class="qa-item">
-      <div class="qa-q"><span class="q-mark">Q</span>どんな副業がありますか？</div>
-      <div class="qa-a"><span class="a-mark">A</span>SNSマーケティング、せどり・物販、FX自動売買、競艇/競馬データ攻略の4ジャンルを提供。あなたのライフスタイルに合った収益化方法が見つかります。</div>
-    </div>
-    <div class="qa-item">
-      <div class="qa-q"><span class="q-mark">Q</span>スマホだけで始められますか？</div>
-      <div class="qa-a"><span class="a-mark">A</span>はい。SNS運用やデータ攻略はスマホ1台でOKです。特別な機材も不要。ネット環境さえあれば今すぐ始められます。</div>
-    </div>
-    <div class="qa-item">
-      <div class="qa-q"><span class="q-mark">Q</span>途中で辞めることはできますか？</div>
-      <div class="qa-a"><span class="a-mark">A</span>はい。LINEのブロックだけでいつでも退会できます。費用は一切かかりませんので、まずはお気軽にご登録ください。</div>
+  <!-- ====== SECTION 14: FOUNDER ====== -->
+  <section class="founder">
+    <h2 class="section-title" style="margin-bottom:1.5rem">運営者<span class="gold">プロフィール</span></h2>
+    <img class="founder-img" src="img/anime_founder.png" alt="運営者">
+    <p class="founder-name">ZERO運営事務局 代表</p>
+    <p class="founder-role">SNSマーケティング実践者</p>
+    <div class="founder-text">
+      私自身、最初は無料の情報だけで副業を始めました。YouTube、ブログ、無料サロン…あらゆる無料コンテンツを試しましたが、<span class="hl">1年間成果はゼロ</span>でした。<br><br>
+      転機は「本気の環境」に飛び込んだこと。体系的な学びと個別フィードバックによって、<span class="hl">3ヶ月で月収30万円</span>を突破。<br><br>
+      この経験から、「無料の限界」と「正しい投資の力」を実感し、本プログラムを立ち上げました。かつての自分のように「頑張っているのに結果が出ない」人を、一人でも多く救いたいと思っています。
     </div>
   </section>
 
-  <!-- ====== CTA 4 (FINAL) ====== -->
-  <section class="cta-section" style="padding:3rem 1.5rem">
-    <p class="limit" style="font-size:1rem;margin-bottom:1rem">未来の自分のために、<br>勇気ある一歩をお待ちしています。</p>
-    <a href="https://lin.ee/XXXXX" class="cta-btn" style="font-size:1.15rem;padding:1.1rem 2.8rem">
-      <svg viewBox="0 0 24 24"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.271.173-.508.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
-      LINEで無料登録する
+  <!-- ====== SECTION 16: BONUS ====== -->
+  <section class="bonus">
+    <h2 class="section-title">今だけの<span class="gold">特別ボーナス</span></h2>
+    <p class="section-sub">無料セミナー参加者限定の特典</p>
+    <div class="bonus-list">
+      <div class="bonus-item">
+        <span class="bonus-tag">特典1</span>
+        <span class="bonus-text">SNS収益化チェックリスト（非売品）</span>
+      </div>
+      <div class="bonus-item">
+        <span class="bonus-tag">特典2</span>
+        <span class="bonus-text">「無料では学べない」収益化の裏側レポート</span>
+      </div>
+      <div class="bonus-item">
+        <span class="bonus-tag">特典3</span>
+        <span class="bonus-text">1対1の無料個別相談（30分）</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SECTION 17: CLOSING ====== -->
+  <section class="closing">
+    <img class="closing-img" src="img/anime_closing.png" alt="未来へ踏み出す">
+    <h2>無料のその先に、<br><span class="gold">本当の成功</span>がある。</h2>
+    <p>「無料を否定」しているのではありません。<br>無料は素晴らしい入口です。</p>
+    <p>でも、<strong style="color:var(--gold-light)">入口の先に進む覚悟</strong>がある人だけが、<br>本当の成果を手にできるのです。</p>
+    <p>あなたの可能性を、<br>「無料」の枠に閉じ込めないでください。</p>
+  </section>
+
+  <!-- ====== CTA FINAL ====== -->
+  <section class="cta-section" style="padding:3rem 1.5rem;background:linear-gradient(180deg,#0d1b2a,#050510)">
+    <p class="limit" style="font-size:1rem;margin-bottom:1rem">あなたの「本気」を、<br>全力でサポートします。</p>
+    <a href="https://lin.ee/XXXXX" class="cta-btn" style="font-size:1.1rem;padding:1.1rem 2.5rem">
+      <svg class="line-svg" viewBox="0 0 24 24"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.271.173-.508.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+      LINE登録で無料セミナーに参加する
     </a>
-    <p class="cta-note">※ 先着300名限定・いつでもブロックOK</p>
+    <p class="cta-note">※ 毎月先着5名限定・強引なセールスは一切ありません</p>
   </section>
+
+  <!-- ====== LEGAL NOTE ====== -->
+  <p class="legal-note">
+    ※ 本ページに記載の事例は個人の実績であり、成果を保証するものではありません。<br>
+    ※ 収益には個人差があり、努力や環境によって結果は異なります。<br>
+    ※ 統計データは自社アンケート調査に基づく参考値です。
+  </p>
 
   <!-- ====== FOOTER ====== -->
   <footer class="footer">
-    <a href="#">特定商取引法に基づく表記</a> | <a href="#">プライバシーポリシー</a>
+    <a href="tokushoho.html">特定商取引法に基づく表記</a> | <a href="privacy.html">プライバシーポリシー</a>
     <p class="copy">&copy; 2025 ZERO運営事務局 All Rights Reserved.</p>
   </footer>
 
