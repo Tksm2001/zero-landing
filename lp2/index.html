@@ -214,6 +214,17 @@ body{font-family:'Zen Maru Gothic','Noto Sans JP',sans-serif;color:#e8e8e8;backg
   .cta-btn{font-size:.95rem;padding:.9rem 1.8rem}
 }
 
+/* ===== PRODUCTS ===== */
+.products{background:linear-gradient(180deg,var(--navy),#0d1b2a);padding:3rem 1.5rem;text-align:center}
+.products-grid{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;max-width:480px;margin:0 auto}
+.product-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:14px;padding:1.1rem .8rem;text-align:center;transition:all .3s}
+.product-card:hover{border-color:rgba(212,160,23,0.3);background:rgba(212,160,23,0.04)}
+.product-icon{font-size:1.8rem;margin-bottom:.4rem;display:block}
+.product-name{font-size:.85rem;font-weight:700;color:var(--gold-light);margin-bottom:.3rem}
+.product-desc{font-size:.7rem;color:rgba(255,255,255,0.6);line-height:1.5}
+.products-note{font-size:.75rem;color:var(--gray);margin-top:1.5rem;line-height:1.7}
+.products-note strong{color:var(--gold-light)}
+
 /* ===== LEGAL ===== */
 .legal-note{font-size:.68rem;color:rgba(255,255,255,0.4);text-align:center;padding:1rem 1.5rem;line-height:1.7}
 </style>
@@ -349,6 +360,75 @@ body{font-family:'Zen Maru Gothic','Noto Sans JP',sans-serif;color:#e8e8e8;backg
       無料セミナーに参加する
     </a>
     <p class="cta-note">※ セミナー後、希望者のみプログラムをご案内</p>
+  </section>
+
+  <!-- ====== SECTION: PRODUCTS & SERVICES ====== -->
+  <section class="products">
+    <h2 class="section-title">本プログラムで学べる<br><span class="gold">副業ジャンル一覧</span></h2>
+    <p class="section-sub">オンライン副業を幅広く網羅。あなたに合った収益の柱が見つかります</p>
+    <div class="products-grid">
+      <div class="product-card">
+        <span class="product-icon">📱</span>
+        <p class="product-name">SNSマーケティング</p>
+        <p class="product-desc">Instagram・TikTok・Xを活用したフォロワー獲得とPR案件・アフィリエイト収益化</p>
+      </div>
+      <div class="product-card">
+        <span class="product-icon">🔗</span>
+        <p class="product-name">アフィリエイト</p>
+        <p class="product-desc">ブログ・SNSで商品を紹介し成果報酬を得る。初期費用ほぼゼロで始められる王道副業</p>
+      </div>
+      <div class="product-card">
+        <span class="product-icon">📦</span>
+        <p class="product-name">せどり・物販</p>
+        <p class="product-desc">Amazon・メルカリ等で仕入れ転売。即金性が高く、仕組み化で自動収益も可能</p>
+      </div>
+      <div class="product-card">
+        <span class="product-icon">📝</span>
+        <p class="product-name">コンテンツ販売</p>
+        <p class="product-desc">自分の知識・経験をPDF・動画教材にして販売。原価ゼロで利益率の高いビジネス</p>
+      </div>
+      <div class="product-card">
+        <span class="product-icon">✍️</span>
+        <p class="product-name">Webライティング</p>
+        <p class="product-desc">企業メディアの記事作成代行。スキルアップで単価UP、在宅完結の安定収入源</p>
+      </div>
+      <div class="product-card">
+        <span class="product-icon">🎬</span>
+        <p class="product-name">動画編集</p>
+        <p class="product-desc">YouTuber・企業の動画制作を受注。需要拡大中で高単価案件も多数</p>
+      </div>
+      <div class="product-card">
+        <span class="product-icon">📈</span>
+        <p class="product-name">FX・仮想通貨投資</p>
+        <p class="product-desc">為替・暗号資産のトレード手法。リスク管理と自動売買ツールの活用法を指導</p>
+      </div>
+      <div class="product-card">
+        <span class="product-icon">🎯</span>
+        <p class="product-name">スキル販売</p>
+        <p class="product-desc">ココナラ・ストアカ等で自分のスキルをサービス化。デザイン・翻訳・相談など幅広く対応</p>
+      </div>
+      <div class="product-card">
+        <span class="product-icon">🖥️</span>
+        <p class="product-name">オンライン講座運営</p>
+        <p class="product-desc">自分の専門分野をオンラインスクール化。受講生を集めて継続的な収益を構築</p>
+      </div>
+      <div class="product-card">
+        <span class="product-icon">🛒</span>
+        <p class="product-name">ハンドメイド販売</p>
+        <p class="product-desc">minne・Creema等でオリジナル作品を販売。趣味を収益に変える人気の副業</p>
+      </div>
+      <div class="product-card">
+        <span class="product-icon">💻</span>
+        <p class="product-name">プログラミング</p>
+        <p class="product-desc">Web制作・アプリ開発の受託。高単価で需要が途切れない専門スキル副業</p>
+      </div>
+      <div class="product-card">
+        <span class="product-icon">🏇</span>
+        <p class="product-name">公営ギャンブル攻略</p>
+        <p class="product-desc">競馬・競艇のデータ分析手法。統計的アプローチで期待値を最大化する戦略を指導</p>
+      </div>
+    </div>
+    <p class="products-note">上記すべてのジャンルに対応したカリキュラムをご用意。<br><strong>あなたの適性・目標に合わせて最適な副業プランをご提案</strong>します。</p>
   </section>
 
   <!-- ====== SECTION 6: SOLUTION ====== -->
